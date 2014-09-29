@@ -1,0 +1,142 @@
+## Standard Format - Ranges of coordinate parts separated by hypen, "to" or "and"
+#### Degrees, minutes, seconds, or decimal versions of any of those
+#### Latitude given first
+
+40°41′–40°46′N, 98°29′–98°50′W
+0°00′–0°40′S, 110°30′–111°30′E
+34°30′–35°30′N, 111°15′–111°45′W
+42°45′–43°23′N, 73°35′–74°0′W
+18°15′N–18°23′N, 65°52′W–65°48′W \\ N and W repeated for each part
+31°–33°N, 102°–104°E   \\ No Minutes or seconds
+26°30′–29° S, 152°30′–153°30′E  \\ Extra spaces
+40°- 41°N, 103°-105°W
+26°28′–29°30′N, 91°31′–97°30′E
+50°10′–50°14′N, 12°37′–12°42′E
+23°47′–24°12′ N, 81° 48′–82°52′ E
+48°39'30"–48°48'21"N, 127°59'05"–128°15'19"E
+33°59´24ʺN - 33°51´0ʺN, 78°2´24ʺW - 77°55´12ʺW
+94°15´–94°30´N, 46°05´– 46°20´W
+50°–62°N, 56°–80°W
+60–61° N, 112–113° W  \\ Degree sign not repeated; no minutes or seconds
+63– 67°N, 141–153°W
+17–17°30′S, 145°30′–145°45′E
+40°08´5ʺN–40°19´40ʺN, 6°54´10ʺW–7°09´14ʺW
+33°35´–33°45´N, 107°51´– 108°01´E
+33°32´–33°45´N, 107°40´– 107°55´E
+13°N-21°N, 144°E-146°E
+57–58°N, 135–136°E
+43°25´N - 44°20´N, 122°25´W - 123°25´W
+18°55´ - 19°02´S, 56°31´ - 57°47´W
+46°49´N - 47°11´N, 93°35´W - 94°20´W
+57°11′ - 57°15′ N,  121°51′ - 124°31′ W
+67°03′–68°40′N, 149°22′–156°52′W
+10°S - 26°S, 128°E - 138°E
+61–64°N, 141–150°W
+35° 26′ - 35° 47′ N, 83° 2′ - 84° 0′ W
+57°00′N - 58°50′N, 92°25′W - 94°15′W
+17°8.7´N - 33°41.5´N, 57°4.4´W - 61°33.9´W  \\ Decimal degrees or minutes
+55.6° to 67.9°N, 159.8° to 130.8°W
+42°30′–43°54′N; 112°45′–116°36′E  \\ Semicolon as separator
+41°46′–42°36′N; 115°51′–116°54′E  \\ Semicolon as separator
+36°31′ to 37°20′N, 108°52′ to 109°26′E
+54°00′N and 55°12′N, 126°20′W and 129°07′W
+39°34′07′′ to 39°34′00′′ N, 84°45′10′′ to 14°45′02′′ W
+39°34′33′′ to 39°34′31′′ N, 84°45′41′′ to 84°45′37′′ W
+57°50′ N to 60°28′ N, 15°10′ E to 18°25′ E
+36°40′ and 37°N to 2°15′ and 2°20′W  // Uses "to" instead of a comma to separate bounding box parts
+0°13′ to 0°41′N, 30°19′ to 30°32′E
+52°07′ and 52°27′ N, 4°18′ and 4°36′ E
+35°15'–36°59'N and 82°21'–90°04'W
+44°30′N to 44°36′N, 092°33′W to 092°21′W
+41° 24′ to 42° 43′ N, 71° 47′ to 71° 32′ W
+18° 12′ and 18° 14′ north, 97° 07′ and 97° 09′ west  \\ word instead of initial for direction
+40−50°N and 75–125°E
+31°40′47.5″ and 31°45′24.5″ North, 113°14′41.0″ and 113°18′53″ West
+latitude 19°N and 20.5°N and longitude 12°W and 14°W
+lat. 37°02′–39°17′N, long. 100°57′–104°57′E
+lat 29°–32°S, long 65°–67°W
+lat 37°05′ to 37°31′S; long 58°13′ to 58°44′W
+lat 44°08′N and 45°07′N, and long 111°10′W and 110°W
+lat 33°48′S to lat 34°26′S, long 59°00′ to long 58°31′W
+
+between lat 44.4° and 44.6° N and long from 104.6° to 104.9° W  \\ extra words 
+about lat 49°N to 54.5°N and from long 51°E to 83°E   \\ extra words
+
+
+46°53′1.309″N, 47°1′16.503″N ; 103°36′35.277″W, 103°18′1.024″W  \\ comma separating ranges
+lat 37°N, lat 38°N, long 111°W, and long 112.5°W
+
+
+
+### RegEx for standard format
+
+(between |[L|l]atitude|[L|l]at(\.)? )?[0-9]{1,2}(\.[0-9]{1,10})?°? *([0-9]{1,2}(\.[0-9]{1,10})?('|′|´))? *([0-9]{1,2}(\.[0-9]{1,10})?(''|"|′′|ʺ|″))? *(N|S|[Nn]orth|[Ss]outh)? *(-|–|−|to|and) *(([L|l]atitude|[L|l]at(\.)?) *)?[0-9]{1,2}(\.[0-9]{1,10})?° *([0-9]{1,2}(\.[0-9]{1,10})?('|′|´))? *([0-9]{1,2}(\.[0-9]{1,10})?(''|"|′′|ʺ|″))? *(N|S|[Nn]orth|[Ss]outh) *(,|;|to|and|, and) *(([L|l]ongitude|[L|l]ong(\.)?) *)?[0-9]{1,3}(\.[0-9]{1,10})?°? *([0-9]{1,2}(\.[0-9]{1,10})?('|′|´))? *([0-9]{1,2}(\.[0-9]{1,10})?(''|"|′′|ʺ|″))? *(E|W|[Ee]ast|[Ww]est)? *(-|–|−|to|and) *(([L|l]ongitude|[L|l]ong(\.)?) *)?[0-9]{1,3}(\.[0-9]{1,10})?° *([0-9]{1,2}(\.[0-9]{1,10})?('|′|´))? *([0-9]{1,2}(\.[0-9]{1,10})?(''|"|′′|ʺ|″))? *(E|W|[Ee]ast|[Ww]est)
+
+
+
+
+## Standard format - Full coordinates denoting corners, separated by "to" or "and" ######
+#### These will be somewhat tricky to separate from regular, single point coordinates
+#### and will need to rely on the semantics of the presentation (i.e., presence of "to")
+46°31′N, 63°39′W to 46°00′N, 62°31W
+between 40°04′N, 122°07′W and 39°26′N, 122°00′W
+47°08′ N, 91°30′ W to 47°58′ N, 90°04′ W
+−108° 27′ and 51° 10′ in the northwest and −106° 12′, 50° 25′ in the southeast
+46° 33.85′ N, 90° 25.06′ W to 41° 44.48′ N, 83° 28.51′ W
+43°46´N, 69°44´W to 33°52´N, 78°30´W
+40°48′27.94″N, 98°23′0.56″W to 40°40′6.16″N, 99°20′9.63″W  \\ Coordinate pairs
+S 00° 38′ 56.3′′ W 90° 19′ 42.0′′ and S 00° 39′ 13.6′′ W 90° 19′ 44.9′′  \\Coordinate pairs
+8° 44′ 36′′ N, 82° 58′ 04′′ W; 8° 47′ 7′′ N, 82° 57′ 32′′ W   \\ Coordinate pairs
+37°24′N, 97°10′E to 42°47′N, 106°53′E \\ Coordinate pair
+
+
+## Standard format with longitude given first ###########################################
+15°30′ and 14°40′W, 17°50 and 15°30N  \\ Longitude first
+36∘17'-36∘55'E, 12∘30'-12∘48'N  \\ Longitude first - Weird degree symbol too!!
+119°39′–120°02′E, 42°29′–43°06′N  \\ Longitude first
+102°41′–103°58′E; 30°44′–32°24′N  \\ Longitude first
+97° 10′ 23″–103° 7′ 15″ E and 39° 52′ 20″–42° 47′ 20″ N  \\ Longitude first
+119°39′–120°02′E, 42°29′–43°06′N  \\ Longitude first
+129–134°E, 17–23.5°S  \\ Longitude first
+78°25′ to 99°06′E, 26°50′ to 30°53′N
+129°-138°E, 20°-26°S
+114.35E to 114.78E, 34.58N to 34.89N
+107°28′E–111°15′E and 35°21′N–39°34′N
+36°0′E to 37°55′E, 1°1′S to 3°3′S
+lat 84°15′ to 84°20′E and, long 28°43′ to 28°50′N
+between 104.9°W and 105.3°W longitude and 43.3°N and 43.6°N latitude 
+
+
+## Standard format with hemisphere direction given before coordinate value
+"N 34° 25.272′ - N 34° 25.298′, W 116° 42.477′ - W 116° 42.465′	 "  \\ Direction given before value
+"N 34° 25.589′ - N 34° 25.573′, W 116° 42.149′ - W 116° 42.177′	 "  \\ Direction given before value
+N 43° 25.390′ - N 34° 25.371′, W 116° 41.930′ - W 116° 41.914′  \\ Direction given before value
+N 34° 25.204′ - N 34° 25.214′, W 116° 42.529′ - W 116° 42.559′   \\ Direction given before value
+E22.0°–E24.0° and S18.5°–S20.5°  \\ Longitude given first, direction given before value
+N17°39′ and 18°53′, W96°55′ and 97°44′  \\ Direction given before value
+N43°34′1″– N43°35′14″, E116°40′28″– E116°46′15″
+
+## Irregular formats ####################################################################
+
+
+33° 47–55′ N, 116° 20–45′ W  \\ Degrees not repeated
+28°38–43′S, 32°10–17′E  \\ Degrees part not repeated
+36°43′–54′S, 143°59′–144°03′E   \\ Degrees not repeated
+36°54′–37° 05′S, 144°42′–46′E   \\ Degrees not repeated
+36°54′–20′S, 143°18′–26′E   \\ Degrees not repeated
+36°36′–52′S, 143°02′–16′E   \\ Degrees not repeated
+25°22–24′N, 80°37–41′W    \\ Degrees not repeated
+34°54′–58′N, 115°36′–39′W  \\ Degrees not repeated
+lat 39°42′–45′N, long 112°11′–17′W
+lat 31°33–44′N, long 110°29–42′W
+
+
+42° 57–59′ N, 4° 98′− 5° 02′ W \\ Degrees not repeated, also invalid minutes for longitude
+28.09033134 - 28.05308977N, 80.56484286 - 80.54984894W   \\ No degree sign
+28°30–31′S, 32°23′E  \\ Missing longitude part
+86°00′E to 119°00′E and 49°00′N to 35°00′N   \\ Longitude first
+
+
+
+35°00′04N–106°41′04W to 33°47′59N–106°52′59W   \\ Poor formatting - not sure we want to try to capture this automatically
+34°50′39N–106°42′44W  \\ This is probably not a bounding box at all, just a poorly-formatted point coordinate
