@@ -70,17 +70,46 @@ def _cleanup(parts):
 
     """
 
-    latdir = (parts['latdir'] or parts['latdir2']).upper()[0]
-    longdir = (parts['longdir'] or parts['longdir2']).upper()[0]
+    # trap for no hemisphere given
+    if (parts['dir11'] or parts ['dir12']):
+        dir1 = (parts['dir11'] or parts['dir12']).upper()[0]
+    if (parts['dir21'] or parts ['dir22']):
+        dir2 = (parts['dir21'] or parts['dir22']).upper()[0]
+    if not 'dir1' in locals():
+        dir1 = 'N'
+    if not 'dir2' in locals():
+        dir2 = 'E'
+        
+    #if not (parts['dir11'] or parts ['dir12']):
+    #    dir1 = "N"
+    #elif not (parts['dir21'] or parts ['dir22']):    
+    #    dir2 = "E"
+    #else:
+    #    dir1 = (parts['dir11'] or parts['dir12']).upper()[0]
+    #    dir2 = (parts['dir21'] or parts['dir22']).upper()[0]
+
+    #bail if they're the same - indicating bounding box
+    if dir1[0] == dir2[0]: return
 
     latdeg = parts.get('latdeg')
     longdeg = parts.get('longdeg')
+
+    latdecdeg = parts.get('latdecdeg')
+    longdecdeg = parts.get('longdecdeg')
 
     latmin = parts.get('latmin', '00') or '00'
     longmin = parts.get('longmin', '00') or '00'
 
     latdecsec = parts.get('latdecsec', '')
     longdecsec = parts.get('longdecsec', '')
+
+    if (latdecdeg and longdecdeg):
+        latdeg += latdecdeg
+        longdeg += longdecdeg
+        latmin = '00'
+        longmin = '00'
+        latsec = '00'
+        longsec = '00'
 
     if (latdecsec and longdecsec):
         latmin += latdecsec
@@ -90,6 +119,28 @@ def _cleanup(parts):
     else:
         latsec = parts.get('latsec', '') or '00'
         longsec = parts.get('longsec', '') or '00'
+
+    # Assign hemisphere directions (latdir and longdir)
+    # Do this last because if coordinate is reported as longitude first, need to flip the lat/long coordinate assignments
+    if dir1:
+        if (dir1[0]=="N" or dir1[0]=="S"):
+            latdir = dir1
+            longdir = dir2
+        else:
+            latdir = dir2
+            longdir = dir1
+            holddeg = latdeg
+            holdmin = latmin
+            holdsec = latsec
+            latdeg = longdeg
+            latmin = longmin
+            latsec = longsec
+            longdeg = holddeg
+            longmin = holdmin
+            longsec = holdsec
+    else:
+        latdir = ''
+        longdir = ''
 
     return [latdir, latdeg, latmin, latsec, longdir, longdeg, longmin, longsec]
 
@@ -104,12 +155,7 @@ def _convert(latdir, latdeg, latmin, latsec, longdir, longdeg, longmin, longsec)
     ('-50.508333', '-50.508333')
 
     """
-    if (latsec != '00' or longsec != '00'):
-        precision = Decimal('0.000001')
-    elif (latmin != '00' or longmin != '00'):
-        precision = Decimal('0.001')
-    else:
-        precision = Decimal('1')
+    precision = Decimal('0.00001')
 
     latitude = Decimal(latdeg)
     latmin = Decimal(latmin)
@@ -143,58 +189,69 @@ def _convert(latdir, latdeg, latmin, latsec, longdir, longdeg, longmin, longsec)
 
     return (lat_str, long_str)
 
+lat_degrees = ur'(?:-?1(?:[0-7][0-9]|80)|(?:-?0?[0-9][0-9])|(?:-?[0-9]))'
+
 parser_re = re.compile(ur"""\b
+    # Optional word "latitude" or "longitude" offset by optional spaces 
+    (\ ?(LATITUDE|\ LONGITUDE)\ ?)?
     # Latitude direction, first position: one of N, S, NORTH, SOUTH
-    ((?P<latdir>NORTH|SOUTH|[NS])\ ?)?
+    ((?P<dir11>NORTH|SOUTH|EAST|WEST|[NSEW])\ ?)?
     # Latitude degrees: two digits 0-90
-    (?P<latdeg>([0-8][0-9])|90)
-    # Optional space, degree mark, period,
-    # or word separating degrees and minutes
-    (\ |(?P<degmark>\ ?(º|°)\ ?|\.|-|\ DEGREES,\ ))?
+    (?P<latdeg>(?:-?1(?:[0-7][0-9]|80)|(?:-?0?[0-9][0-9])|(?:-?[0-9])))
+    (?P<latdecdeg>\.\d{1,8})?
+    # Degree mark or word separating degrees and minutes
+    (?P<degmark>\ ?(?:º|°|˚|degrees))\ ?
     (?P<latminsec>
     # Latitude minutes: two digits 0-59
-    (?P<latmin>[0-5][0-9])
+    (?P<latmin>[0-5]?[0-9])
     # If there was a degree mark before, look for punctuation after the minutes
-    (\ |(?(degmark)('|′|"|″|\ MINUTES(,\ )?)))?
+    (\ |(?(degmark)(″|"|′|'|’|minutes|′′|'')))?\ ?
     (
     # Latitude seconds: two digits
-    ((?P<latsec>(\d{1,2}))|
+    ((?P<latsec>(\d{1,2}))
     # Decimal fraction of minutes
-    (?P<latdecsec>\.\d{1,3}))?)
-    (?(degmark)("|″|'|\ SECONDS\ )?)
+    (?P<latdecsec>\.\d{1,8})?)?)
+    (?(degmark)(″|"|′|'|seconds|′′|'')?)\ ?
     )?
     # Latitude direction, second position, optionally preceded by a space
-    (\ ?(?P<latdir2>(?(latdir)|(NORTH|SOUTH|[NS]))))
-    # Latitude/longitude delimiter: space, forward slash, comma, or none
-    (\ ?[ /]\ ?|,\ )?
+    (\ ?(?P<dir12>(?(dir11)|(NORTH|SOUTH|EAST|WEST|[NSEW]))))?
+    # Optional word "latitude" or "longitude" offset by optional spaces
+    (\ ?(LATITUDE|\ LONGITUDE)\ ?)?
+    # Latitude/longitude delimiter: space, semicolon, comma, "by", or none
+    (\ |\ BY\ |\ AND\ |,\ ?|;\ ?)?
+    # Optional word "latitude" or "longitude" offset by optional spaces
+    (\ ?(LATITUDE|\ LONGITUDE)\ ?)?    
     # Longitude direction, first position: one of E, W, EAST, WEST
-    (?(latdir)((?P<longdir>EAST|WEST|[EW])\ ?))
+    (?(dir11)((?P<dir21>NORTH|SOUTH|EAST|WEST|[NSEW])\ ?))?
     # Longitude degrees: two or three digits
-    (?P<longdeg>((1(([0-7][0-9]|80))|(0?[0-9][0-9]))))
+    (?P<longdeg>(?:-?1(?:[0-7][0-9]|80)|(?:-?0?[0-9][0-9])|(?:-?[0-9])))
+    (?P<longdecdeg>\.\d{1,8})?   
     # If there was a degree mark before, look for another one here
-    (\ |(?(degmark)(\ ?(º|°)\ ?|\.|-|\ DEGREES,\ )))?
+    ((?(degmark)(\ ?(?:º|°|˚|degrees))))\ ?
     (?(latminsec)   #Only look for minutes and seconds in the longitude
     (?P<longminsec> #if they were there in the latitude
     # Longitude minutes: two digits
-    (?P<longmin>[0-5][0-9])
+    (?P<longmin>[0-5]?[0-9])
     # If there was a degree mark before, look for punctuation after the minutes
-    (\ |(?(degmark)('|′|"|″|\ MINUTES(,\ )?)))?
+    (\ |(?(degmark)(″|"|′|'|’|minutes|′′|'')))?\ ?
     # Longitude seconds: two digits
-    ((?P<longsec>(\d{1,2}))|
+    ((?P<longsec>(\d{1,2}))
     # Decimal fraction of minutes
-    (?P<longdecsec>\.\d{1,3}))?)
-    (?(degmark)("|″|'|\ SECONDS\ )?)
+    (?P<longdecsec>\.\d{1,8})?)?)
+    (?(degmark)(″|"|′|'|seconds|′′|'')?)\ ?
     )
     #Longitude direction, second position: optionally preceded by a space
-    (?(latdir)|\ ?(?P<longdir2>(EAST|WEST|[EW])))
+    (?(dir21)|\ ?(?P<dir22>(NORTH|SOUTH|EAST|WEST|[NSEW])))?
+    # Optional word "latitude" or "longitude" offset by optional spaces
+    (\ ?(LATITUDE|\ LONGITUDE)\ ?)?    
     \b
     """, re.VERBOSE | re.UNICODE | re.IGNORECASE)
 
 ################################################################################
 ### Begin parsing
 
-outfile = sys.argv[1]  #'loc_parsing.csv'
-indir = sys.argv[2]  #'/Users/jasokarl/Dropbox/JournalMap/TF_XML'
+outfile = '/Users/jason/Desktop/loc_parsing.csv' #sys.argv[1]  
+indir = '/Volumes/XML Storage/Oxford/abopla5_xml' # sys.argv[2]
 os.chdir(indir)
 
 xmlList = glob.glob("*.xml")
@@ -206,6 +263,7 @@ out.writerow(["doi","origLat","origLon","latDD","lonDD"])
 
 ### Get the XML data ##################################
 #item = xmlList[2]
+i = 0
 for item in xmlList:
     soup = BeautifulSoup(open(item))
     article = soup.article
@@ -214,16 +272,19 @@ for item in xmlList:
     
     ### Return any coordinates that are found #############
     #for str in test.stripped_strings:
-    for str in article.stripped_strings:
-        matches = parser_re.finditer(str)
-        for match in matches:
-            t= match.group()
-            #print t
-            t2 = _cleanup(match.groupdict())
-            #print t2
-            geodd = _convert(t2[0], t2[1], t2[2], t2[3], t2[4], t2[5], t2[6], t2[7])
-    
-            ### Write to the CSV
-            print doi.get_text() + ", " + t + ", " + geodd[0] + ", " + geodd[1]
-            out.writerow([doi.get_text(),t.split(",")[0],t.split(",")[1],geodd[0],geodd[1]])
+    text = " ".join(article.stripped_strings)
+    #for str in article.stripped_strings:
+    matches = parser_re.finditer(text)
+    for match in matches:
+        t= match.group()
+        #print t
+        t2 = _cleanup(match.groupdict())
+        if not t2: break
+        #print t2
+        geodd = _convert(t2[0], t2[1], t2[2], t2[3], t2[4], t2[5], t2[6], t2[7])
+
+        ### Write to the CSV
+        i += 1
+        print unicode(i) + ", " + doi.get_text() + ", " + t + ", " + geodd[0] + ", " + geodd[1]
+        #out.writerow([doi.get_text(),t.split(",")[0],t.split(",")[1],geodd[0],geodd[1]])
 

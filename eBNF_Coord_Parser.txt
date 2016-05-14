@@ -1,0 +1,19 @@
+(* extended Backus-Naur Form Description of Coordinate Parsing for JournalMap *)
+(* https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_Form *)
+
+coordinate ::= latitude separator longitude
+
+separator ::= ,|;|by|and
+
+latitude ::= [hemisphere] latdegree [minutes] [seconds] [hemisphere]
+longitude ::= [hemisphere] londegree [minutes] [seconds] [hemisphere]
+
+hemisphere ::= N|S|E|W|north|south|east|west
+
+latdegree ::= -?[0-8]?[0-9]|90 [degreesymbol]
+londegree ::= -?[0,1]?[0-7]?[0-9]|180 [degreesymbol]
+
+degreesymbol ::= º|°|˚|degrees
+
+minutes ::= [0-5]?[0-9] [′|'|’|minutes]
+seconds ::= [0-5]?[0-9] [″|"|seconds|′′|'']
