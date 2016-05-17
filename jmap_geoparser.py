@@ -67,7 +67,7 @@ class coordinate(object):
 ## Parsing elements
 digits = Word(nums)
 
-degSign = Literal("º") | Literal('°') | Literal(' ͦ') | Literal('˚') | Literal('º') | CaselessLiteral("degrees")  # º|°|˚|°|degrees|&deg;
+degSign = Literal("º") | Literal('°') | Literal(' ͦ') | Literal('˚') | Literal('º') | Literal('ø') | CaselessLiteral("degrees")  # º|°|˚|°|degrees|&deg;
 minSign = Literal("’") | Literal("′") | Literal("'") | Literal("‛") | Literal("‘") | Literal('ʹ') | Literal('ʼ')  | CaselessLiteral("minutes")  # ″|"|′|'|’|minutes|′′|''
 secSign = Literal('″') | Literal('"') | Literal("′′") | Literal("''") | Literal("’’") | Literal("‛‛") | Literal("‘‘") | Literal("ʹʹ") | Literal("ʼʼ") | Literal('“') | Literal('”') | Literal('‟') | Literal('〞') | Literal('＂') | Literal('ʺ') | Literal('˝')| CaselessLiteral("seconds")
 negSign = Literal('-') | Literal('−') | Literal('–') | Literal('—') | Literal('―') | Literal('‒')
@@ -80,10 +80,12 @@ latHemi.setParseAction(formatHemi)
 lonHemi = oneOf("east west E W", caseless=True)
 lonHemi.setParseAction(formatHemi)
 
-latDeg = coordPart + Suppress(Optional(degSign))
+latDeg = coordPart + Suppress(degSign)
+#latDeg = coordPart + Suppress(Optional(degSign))
 latDeg.setParseAction(validateLatDeg)
 
-lonDeg = coordPart + Suppress(Optional(degSign))
+lonDeg = coordPart + Suppress(degSign)
+#lonDeg = coordPart + Suppress(Optional(degSign))
 lonDeg.setParseAction(validateLonDeg)
 
 mins = coordPart + Suppress(Optional(minSign))
