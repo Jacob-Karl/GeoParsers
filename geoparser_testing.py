@@ -63,12 +63,14 @@ notParsed = 0
 badParse = 0
 total = 0
 with open('test_set_full.csv', 'rb') as f:
+#with open('test_set4.csv', 'rb') as f:
     reader = csv.reader(f)
     for row in reader:
         total+=1
         latitude = row[0]
         longitude = row[1]
         coord_string = row[2]
+        print coord_string
         coords = coordinateParser.searchString(coord_string)
         try:
             assert coords
@@ -112,13 +114,14 @@ notParsed = 0
 badParse = 0
 total = 0
 with open('test_set_full.csv', 'rb') as f:
+#with open('test_set4.csv', 'rb') as f:
     reader = csv.reader(f)
     for row in reader:
         total+=1
         latitude = row[0]
         longitude = row[1]
         coord_string = row[2]
-        #print coord_string
+        print coord_string
         matches = parser_re.finditer(coord_string.decode('utf-8'))
         coords = len(parser_re.findall(coord_string.decode('utf-8')))
         try:

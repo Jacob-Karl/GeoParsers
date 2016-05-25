@@ -60,28 +60,36 @@ def GeoCleanup(parts):
     if (parts['longsign']):
         longdeg = u'-'+longdeg
 
-    latdecdeg = parts.get('latdecdeg')
-    longdecdeg = parts.get('longdecdeg')
+    latdecdeg = parts.get('latdecdeg', '') or ''
+    longdecdeg = parts.get('longdecdeg', '') or ''
 
-    latmin = parts.get('latmin', '00') or '00'
-    longmin = parts.get('longmin', '00') or '00'
+    latmin = parts.get('latmin', '') or '00'
+    longmin = parts.get('longmin', '') or '00'
+    
+    latdecmin = parts.get('latdecmin','') or ''
+    longdecmin = parts.get('longdecmin','') or ''
 
-    latdecsec = parts.get('latdecsec', '')
-    longdecsec = parts.get('longdecsec', '')
+    latsec = parts.get('latsec','00') or '00'
+    longsec = parts.get('longsec','00') or '00'
 
-    if (latdecdeg and longdecdeg):
+    latdecsec = parts.get('latdecsec','') or ''
+    longdecsec = parts.get('longdecsec','') or ''
+
+    if (latdecdeg or longdecdeg):
         latdeg += latdecdeg
         longdeg += longdecdeg
         latmin = '00'
         longmin = '00'
         latsec = '00'
         longsec = '00'
-
-    if (latdecsec and longdecsec):
-        latmin += latdecsec
-        longmin += longdecsec
+    elif (latdecmin or longdecmin):
+        latmin += latdecmin
+        longmin += longdecmin
         latsec = '00'
         longsec = '00'
+    elif (latdecsec or longdecsec):
+        latsec += latdecsec
+        longsec += longdecsec
     else:
         latsec = parts.get('latsec', '') or '00'
         longsec = parts.get('longsec', '') or '00'
@@ -170,7 +178,7 @@ lat_degrees = ur'(?:-?1(?:[0-7][0-9]|80)|(?:-?0?[0-9][0-9])|(?:-?[0-9]))'
 
 parser_re = re.compile(ur"""\b
     # Optional word "latitude" or "longitude" offset by optional spaces 
-    (\ ?(LATITUDE|LONGITUDE|LAT|LONG|LON)\ ?)?
+    (\ ?(LATITUDE|LONGITUDE|LAT|LONG|LON)[.:]?\ ?)?
     # Latitude direction, first position: one of N, S, NORTH, SOUTH
     ((?P<dir11>NORTH|SOUTH|EAST|WEST|[NSEW])\ ?)?
     # Latitude degrees: two digits 0-90
@@ -178,27 +186,28 @@ parser_re = re.compile(ur"""\b
     (?P<latdeg>(?:1(?:[0-7][0-9]|80)|(?:-?0?[0-9][0-9])|(?:-?[0-9])))
     (?P<latdecdeg>\.\d{1,8})?
     # Degree mark or word separating degrees and minutes
-    (?P<degmark>\ ?(?:º|°|˚|°|˚| ͦ|˚|º|°|degrees|&deg;))\ ?
+    (?P<degmark>\ ?(?:º|°|˚|°|˚| ͦ|˚|º|°|degrees|&deg;))\ ?  
     (?P<latminsec>
     # Latitude minutes: two digits 0-59
     (?P<latmin>[0-5]?[0-9])
+    (?P<latdecmin>\.\d{1,8})?
     # If there was a degree mark before, look for punctuation after the minutes
     (\ |(?(degmark)(″|"|′|'|’|minutes|′′|''|‘|‘‘|’|’’|‛|‛‛|‘|‘‘|ʹ|ʹʹ|ʼ|ʼʼ|“|”|‟|‟|〞|＂|ʺ|˝)))?\ ?
     (
     # Latitude seconds: two digits
     ((?P<latsec>(\d{1,2}))
-    # Decimal fraction of minutes
+    # Decimal fraction of seconds
     (?P<latdecsec>\.\d{1,8})?)?)
     (?(degmark)(″|"|′|'|seconds|′′|''|‘|‘‘|’|’’|‛|‛‛|‘|‘‘|ʹ|ʹʹ|ʼ|ʼʼ|“|”|‟|‟|〞|＂|ʺ|˝)?)\ ?
-    )?
+    )? 
     # Latitude direction, second position, optionally preceded by a space
     (\ ?(?P<dir12>(?(dir11)|(NORTH|SOUTH|EAST|WEST|[NSEW]))))?
     # Optional word "latitude" or "longitude" offset by optional spaces
-    (\ ?(LATITUDE|LONGITUDE|LAT|LONG|LON)\ ?)?
+    (\ ?(LATITUDE|LONGITUDE|LAT|LONG|LON)[.:]?\ ?)?
     # Latitude/longitude delimiter: space, semicolon, comma, "by", or none
     (\ |\ BY\ |\ AND\ |,\ ?|;\ ?)?
     # Optional word "latitude" or "longitude" offset by optional spaces
-    (\ ?(LATITUDE|LONGITUDE|LAT|LONG|LON)\ ?)?    
+    (\ ?(LATITUDE|LONGITUDE|LAT|LONG|LON)[.:]?\ ?)?    
     # Longitude direction, first position: one of E, W, EAST, WEST
     (?(dir11)((?P<dir21>NORTH|SOUTH|EAST|WEST|[NSEW])\ ?))?
     # Longitude degrees: two or three digits
@@ -211,6 +220,7 @@ parser_re = re.compile(ur"""\b
     (?P<longminsec> #if they were there in the latitude
     # Longitude minutes: two digits
     (?P<longmin>[0-5]?[0-9])
+    (?P<longdecmin>\.\d{1,8})?
     # If there was a degree mark before, look for punctuation after the minutes
     (\ |(?(degmark)(″|"|′|'|’|minutes|′′|''|‘|‘‘|’|’’|‛|‛‛|‘|‘‘|ʹ|ʹʹ|ʼ|ʼʼ|“|”|‟|‟|〞|＂|ʺ|˝)))?\ ?
     # Longitude seconds: two digits
@@ -222,7 +232,7 @@ parser_re = re.compile(ur"""\b
     #Longitude direction, second position: optionally preceded by a space
     (?(dir21)|\ ?(?P<dir22>(NORTH|SOUTH|EAST|WEST|[NSEW])))?
     # Optional word "latitude" or "longitude" offset by optional spaces
-    (\ ?(LATITUDE|LONGITUDE|LAT|LONG|LON)\ ?)?    
+    (\ ?(LATITUDE|LONGITUDE|LAT|LONG|LON)[.:]?\ ?)?    
     \b
     """, re.IGNORECASE | re.VERBOSE)
 

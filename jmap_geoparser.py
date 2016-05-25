@@ -9,7 +9,7 @@ from pyparsing import *
 
 ## Parsing validation functions
 def validateLatDeg(nums):
-    if abs(float(nums[0])) >= 90:
+    if abs(float(nums[0])) >= 180:   ## This was relaxed to allow for reversed coordinate pairs (i.e., long/lat). Will impose this validation in the calcDD method
         raise ParseException("Invalid Latitude Degrees: %s" % nums[0])
 
 def validateLonDeg(nums):
@@ -37,28 +37,79 @@ class coordinate(object):
     lonMin = 0
     lonSec = 0
     lonHemi = 'E'
+    latSign = 1
+    lonSign = 1    
     
     def __init__(self, parseDict):
         self.parseDict = parseDict
+        
+        # first figure out the hemisphere designations if any and decide if coordinate
+        # is lat/long (most common) or long/lat. If no hemisphere designations,
+        # assume lat/long
+        hemi11 = ''
+        hemi12 = ''
+        hemi21 = ''
+        hemi22 = ''
+        if 'hemi11' in parseDict: hemi11 = parseDict.hemi11[0] 
+        if 'hemi12' in parseDict: hemi12 = parseDict.hemi12[0] 
+        if 'hemi21' in parseDict: hemi21 = parseDict.hemi21[0] 
+        if 'hemi22' in parseDict: hemi22 = parseDict.hemi22[0] 
+        
+        if hemi11 or hemi12: self.latHemi = (hemi11 or hemi12) # only one of hemi11 or hemi12 is provided
+        if hemi11 and hemi12: # both exist, need to check if they are different
+            self.latHemi = hemi11
+            if hemi11 != hemi12:
+                # This means that the parser caught two hemisphere designations for latHemi, and they're
+                # probably different. Most likely the second one comes from the second part
+                # of the coordinate pair and there was no separator character (e.g., comma).                            
+                self.lonHemi = hemi12
+        
+        if hemi21 or hemi22:
+            self.lonHemi = (hemi21 or hemi22)
+        
+        # Get the rest of the coordinate parts from the parseDict
         self.latDeg = float(parseDict.latDeg[0])
         if 'latMin' in parseDict: self.latMin = float(parseDict.latMin[0])
         if 'latSec' in parseDict: self.latSec = float(parseDict.latSec[0])
-        if 'latNeg' in parseDict: self.latHemi = 'S'
-        if 'latHemi' in parseDict: self.latHemi = parseDict.latHemi[0]
+        if 'latNeg' in parseDict: self.latSign = -1
+        #if 'latHemi' in parseDict: self.latHemi = parseDict.latHemi[0]
         
         self.lonDeg = float(parseDict.lonDeg[0])
         if 'lonMin' in parseDict: self.lonMin = float(parseDict.lonMin[0])
         if 'lonSec' in parseDict: self.lonSec = float(parseDict.lonSec[0])
-        if 'lonNeg' in parseDict: self.lonHemi = 'W'
-        if 'lonHemi' in parseDict: self.lonHemi = parseDict.lonHemi[0]
+        if 'lonNeg' in parseDict: self.lonSign = -1
+        #if 'lonHemi' in parseDict: self.lonHemi = parseDict.lonHemi[0]
     
     def calcDD(self):
-        latSign = 1
-        lonSign = 1
-        if self.latHemi.upper() == 'S': latSign = -1
-        if self.lonHemi.upper() == 'W': lonSign = -1
-        lat = latSign*(self.latDeg + self.latMin/60 + self.latSec/3600)
-        lon = lonSign*(self.lonDeg + self.lonMin/60 + self.lonSec/3600)
+        # Check if the coordinate pair is actually Long/Lat
+        if self.latHemi.upper() in ['E','W']:
+            #switch things around
+            holdDeg = self.latDeg
+            holdMin = self.latMin
+            holdSec = self.latSec
+            holdHemi = self.latHemi
+            holdSign = self.latSign
+            self.latDeg = self.lonDeg
+            self.latMin = self.lonMin
+            self.latSec = self.lonSec
+            self.latHemi = self.lonHemi
+            self.latSign = self.lonSign
+            self.lonDeg = holdDeg
+            self.lonMin = holdMin
+            self.lonSec = holdSec
+            self.lonHemi = holdHemi
+            self.latSign = holdSign
+        
+        # Check for latitude values greater than 90º
+        if self.latDeg > 90:
+            print "Invalid Latitude Degrees: " +str(self.latDeg)
+            return {"latitude":-999, "longitude":-999}
+        
+
+        if self.latHemi.upper() == 'S': self.latSign = -1
+        if self.lonHemi.upper() == 'W': self.lonSign = -1
+        lat = self.latSign*(self.latDeg + self.latMin/60 + self.latSec/3600)
+        lon = self.lonSign*(self.lonDeg + self.lonMin/60 + self.lonSec/3600)
         return {"latitude":round(lat,5), "longitude":round(lon,5)}
     
 
@@ -67,18 +118,16 @@ class coordinate(object):
 ## Parsing elements
 digits = Word(nums)
 
-degSign = Literal("º") | Literal('°') | Literal(' ͦ') | Literal('˚') | Literal('º') | Literal('ø') | CaselessLiteral("degrees")  # º|°|˚|°|degrees|&deg;
-minSign = Literal("’") | Literal("′") | Literal("'") | Literal("‛") | Literal("‘") | Literal('ʹ') | Literal('ʼ')  | CaselessLiteral("minutes")  # ″|"|′|'|’|minutes|′′|''
-secSign = Literal('″') | Literal('"') | Literal("′′") | Literal("''") | Literal("’’") | Literal("‛‛") | Literal("‘‘") | Literal("ʹʹ") | Literal("ʼʼ") | Literal('“') | Literal('”') | Literal('‟') | Literal('〞') | Literal('＂') | Literal('ʺ') | Literal('˝')| CaselessLiteral("seconds")
+degSign = Literal("º") | Literal('°') | Literal(' ͦ') | Literal('˚') | Literal('º') | Literal('ø') | CaselessLiteral("degrees") | CaselessLiteral("deg") # º|°|˚|°|degrees|&deg;
+minSign = Literal("’") | Literal("′") | Literal("'") | Literal("‛") | Literal("‘") | Literal('ʹ') | Literal('ʼ')  | CaselessLiteral("minutes") | CaselessLiteral("min") # ″|"|′|'|’|minutes|′′|''
+secSign = Literal('″') | Literal('"') | Literal("′′") | Literal("''") | Literal("’’") | Literal("‛‛") | Literal("‘‘") | Literal("ʹʹ") | Literal("ʼʼ") | Literal('“') | Literal('”') | Literal('‟') | Literal('〞') | Literal('＂') | Literal('ʺ') | Literal('˝')| CaselessLiteral("seconds") | CaselessLiteral("sec")
 negSign = Literal('-') | Literal('−') | Literal('–') | Literal('—') | Literal('―') | Literal('‒')
 decPoint = Literal(".") | Literal(".")
 
 coordPart = Combine(digits + Optional(decPoint + digits))
 
-latHemi = oneOf("north south N S", caseless=True)
-latHemi.setParseAction(formatHemi)
-lonHemi = oneOf("east west E W", caseless=True)
-lonHemi.setParseAction(formatHemi)
+hemi = oneOf("north south east west N S E W", caseless=True)
+hemi.setParseAction(formatHemi)
 
 latDeg = coordPart + Suppress(degSign)
 #latDeg = coordPart + Suppress(Optional(degSign))
@@ -93,15 +142,15 @@ mins.setParseAction(validateMinSec)
 secs = coordPart + Suppress(Optional(secSign))
 secs.setParseAction(validateMinSec)
 
-separator = Suppress(Optional(Literal(',') | Literal(";") | oneOf("by and", caseless=True)))
-fluff = Suppress(Optional(CaselessLiteral("latitude of") | CaselessLiteral("longitude of") | oneOf("latitude lat lat. lat: longitude long long. lon lon. lon:", caseless=True) ))
+separator = Suppress(Optional(Literal(',') | Literal(";") | Literal("") | oneOf("by and", caseless=True))  )
+fluff = Suppress(Optional(Literal("") | CaselessLiteral("latitude of") | CaselessLiteral("longitude of") | oneOf("latitude latitude: lat lat. lat: longitude longitude: long long. lon lon. lon:", caseless=True) ))
 
 # Option that includes provision for commas between degrees, minutes, and seconds (pretty uncommon, but prevents other simpler versions from parsing
 #latPart = fluff + Optional(latHemi.setResultsName('latHemi')) + Optional(negSign.setResultsName('latNeg')) + latDeg.setResultsName('latDeg') + Optional(Literal(",")) + Optional(mins.setResultsName('latMin')) + Optional(Literal(",")) + Optional(secs.setResultsName('latSec')) + Optional(latHemi.setResultsName('latHemi')) + fluff
 #lonPart = fluff + Optional(lonHemi.setResultsName('lonHemi')) + Optional(negSign.setResultsName('latNeg')) + lonDeg.setResultsName('lonDeg') + Optional(Literal(",")) + Optional(mins.setResultsName('lonMin')) + Optional(Literal(",")) + Optional(secs.setResultsName('lonSec')) + Optional(lonHemi.setResultsName('lonHemi')) + fluff
 
 # Standard version (no commas between degrees, minutes, and seconds.
-latPart = fluff + Optional(latHemi.setResultsName('latHemi')) + Optional(negSign.setResultsName('latNeg')) + latDeg.setResultsName('latDeg') + Optional(mins.setResultsName('latMin')) + Optional(secs.setResultsName('latSec')) + Optional(latHemi.setResultsName('latHemi')) + fluff
-lonPart = fluff + Optional(lonHemi.setResultsName('lonHemi')) + Optional(negSign.setResultsName('latNeg')) + lonDeg.setResultsName('lonDeg') + Optional(mins.setResultsName('lonMin')) + Optional(secs.setResultsName('lonSec')) + Optional(lonHemi.setResultsName('lonHemi')) + fluff
+latPart = fluff + Optional(hemi.setResultsName('hemi11')) + Optional(negSign.setResultsName('latNeg')) + latDeg.setResultsName('latDeg') + Optional(mins.setResultsName('latMin')) + Optional(secs.setResultsName('latSec')) + Optional(hemi.setResultsName('hemi12')) + Optional(fluff)
+lonPart = Optional(fluff) + Optional(hemi.setResultsName('hemi21')) + Optional(negSign.setResultsName('lonNeg')) + lonDeg.setResultsName('lonDeg') + Optional(mins.setResultsName('lonMin')) + Optional(secs.setResultsName('lonSec')) + Optional(hemi.setResultsName('hemi22')) + fluff
 
-coordinateParser = latPart + separator + lonPart
+coordinateParser = latPart + separator.setResultsName('sep') + lonPart

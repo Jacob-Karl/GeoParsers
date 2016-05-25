@@ -1,504 +1,124 @@
 inLat,inLong,outLat,outLong,coord_string,parse_error
 41.6664,-112.549,,,"lat 41°38′119″N, long 112°27′357″W",Coordinate not parsed
-42.9167,-108.667,42.08417,108.46667,"42°53.597′N, 108°28.417′W",Parsed coordinates do not match original
+42.9167,-108.667,42.89328,-108.47362,"42°53.597′N, 108°28.417′W",Parsed coordinates do not match original
 8.499,-77.333,8.49500,-77.33417,"8°29'42""N, 77°20'3""W",Parsed coordinates do not match original
-29.2167,-103.266,,,"29°5.86″ N, 103°14′13.54″ W",Coordinate not parsed
+29.2167,-103.266,29.09767,-103.23333,"29°5.86″ N, 103°14′13.54″ W",Parsed coordinates do not match original
 40.3667,-105.708,40.56667,-105.50000,Rocky Mountain National Park extends from 40°10′ N to 40°34′ N latitude and 105°30′ W to 105°55′ W longitude,Parsed coordinates do not match original
 66.0334,17.8167,66.15000,17.71667,65°55′ N to 66°09′ N; 17°43′ E to 17°55′ E,Parsed coordinates do not match original
-25.125,-80.47,25.00194,80.46667,"25°07.5′ N, 80°28.2′ W",Parsed coordinates do not match original
-24.975,-80.842,24.08556,80.83333,"24°58.5′ N, 80°50.5′ W",Parsed coordinates do not match original
-24.942,-80.792,24.08500,80.78333,"24°56.5′ N, 80°47.5′ W",Parsed coordinates do not match original
 -41.1683,-71.3809,-41.53333,71.26667,c. 40°36′ to 41°32′ S and 71°16′ to 40′ W,Parsed coordinates do not match original
-44.1507,-83.8477,46.05083,90.41667,"between 46°33.85′ N, 90°25.06′ W and 41°44.48′ N, 83°28.51′ W",Parsed coordinates do not match original
-44.1507,-83.8477,41.06778,83.46667,"between 46°33.85′ N, 90°25.06′ W and 41°44.48′ N, 83°28.51′ W",Parsed coordinates do not match original
+44.1507,-83.8477,46.56417,-90.41767,"between 46°33.85′ N, 90°25.06′ W and 41°44.48′ N, 83°28.51′ W",Parsed coordinates do not match original
+44.1507,-83.8477,41.74133,-83.47517,"between 46°33.85′ N, 90°25.06′ W and 41°44.48′ N, 83°28.51′ W",Parsed coordinates do not match original
 49.525,80.2583,50.20000,79.81667,48°51′–50°12′ N and 79°49′–80°42′ W,Parsed coordinates do not match original
 37.66,-118.833,37.66667,-118.83333,"37°40' N, 118°50' W",Parsed coordinates do not match original
-26.6603,77.908,26.65200,77.91267,"N 26°39'37.12""  E 77°54'28.76"" ",Parsed coordinates do not match original
 46.7823,23.9167,46.80000,23.60000,"46°33′–46°48′ N, 23°36′–23°57′ E",Parsed coordinates do not match original
 46.5044,22.5401,46.80000,23.60000,"46°33′–46°48′ N, 23°36′–23°57′ E",Parsed coordinates do not match original
 46.7792,23.9642,46.80000,23.60000,"46°33′–46°48′ N, 23°36′–23°57′ E",Parsed coordinates do not match original
 46.5579,23.9098,46.80000,23.60000,"46°33′–46°48′ N, 23°36′–23°57′ E",Parsed coordinates do not match original
 0.5778,120.311,0.57778,120.30000,"0º34'40"" N, 120º18',40"" E",Parsed coordinates do not match original
-34.983,-75.458,34.08583,75.45000,"34° 59.0' N, 75° 27.5' W",Parsed coordinates do not match original
-34.483,-76.217,34.03583,76.21667,"34° 29.0' N, 76° 13.0' W",Parsed coordinates do not match original
-34.47,-76.118,34.03556,76.11667,"34° 28.2' N, 76° 07.1' W",Parsed coordinates do not match original
-34.475,-76.117,34.03556,76.11667,"34° 28.5' N, 76° 07.0' W",Parsed coordinates do not match original
-34.395,-75.937,34.03417,75.93333,"34° 23.7' N, 75° 56.2' W",Parsed coordinates do not match original
-33.718,-76.678,33.06750,76.66667,"33° 43.1' N, 76° 40.7' W",Parsed coordinates do not match original
-35.2872,-106.501,35.29667,-106.50500,"35˚17'13.8""N, 106˚30'4.3""W",Parsed coordinates do not match original
-35.2786,-106.478,35.26667,-106.46667,"35˚16'43.0""N,106˚28'40.0""W",Parsed coordinates do not match original
 26.746,91.0203,,,26°35′N to 91°15′E,Coordinate not parsed
-41.496,-104.761,41.03583,104.75000,"41°29.73′N, 104°45.65′W",Parsed coordinates do not match original
-42.305,-106.698,42.01889,106.68333,"42°18.3′ N, 106°41.9′ W",Parsed coordinates do not match original
 8.3,32.1,,,8.3° 32.1°,Coordinate not parsed
 -19.15,-48.383,,,19°09′ S–48°23′ W,Coordinate not parsed
--21.4157,-56.1615,-21.41000,-56.15833,21° 24′ 56.6″ S; 56° 09′ 41.5″ W,Parsed coordinates do not match original
-17.8411,-89.0191,17.83500,-89.03000,"17°50′28.1″N, 89°01′08.8″W",Parsed coordinates do not match original
-15.382,-88.717,15.03389,88.71667,"15°22.895′N, 88°43.043′W",Parsed coordinates do not match original
-18.4153,-89.137,18.41500,-89.13667,"18°24′54.9″N, 89°08′13.2″W",Parsed coordinates do not match original
-11.132,-69.653,11.00194,69.65000,"11°07.930′N, 69°39.184′W",Parsed coordinates do not match original
--18.9675,-40.1343,-18.96667,-40.14333,"18°58′03.0″S, 40°08′03.6″W",Parsed coordinates do not match original
-10.351,-67.687,10.03361,67.68333,"10°21.047′N, 67°41.198′W",Parsed coordinates do not match original
-10.351,-67.687,10.03361,67.68333,"10°21.047′N, 67°41.198′W",Parsed coordinates do not match original
-8.623,-74.352,8.05194,74.35000,"8°37.38′N, 74°21.10′W",Parsed coordinates do not match original
-8.624,-71.035,8.05194,71.03333,"8°37.44′N, 71°2.10′W",Parsed coordinates do not match original
-8.7,-69.593,8.06722,69.58333,"8°42.0′N, 69°35.6′W",Parsed coordinates do not match original
-7.974,-72.091,7.08556,72.08333,"7°58.41′N, 72°5.43′W",Parsed coordinates do not match original
-5.34967,-56.3464,5.33333,-56.34167,"5°20′98.0″N, 56°20′78.5″W",Parsed coordinates do not match original
-5.37331,-56.1804,5.38167,-56.17433,"5°22′23.9″N, 56°10′49.46″W",Parsed coordinates do not match original
-5.52761,-55.0513,5.52333,-55.06167,"5°31′39.4″N, 55°3′4.7″W",Parsed coordinates do not match original
+39,-76,39.00000,-76.20000,"39°N, 76.2°W",Parsed coordinates do not match original
+-3,-61,-3.30000,-61.00000,"3.3°S, 61°W",Parsed coordinates do not match original
+38,-75,38.20000,-75.00000,"38.2°N, 75°W",Parsed coordinates do not match original
+-7,-63,-7.50000,-63.00000,"7.5°S, 63°W",Parsed coordinates do not match original
+-7,-34,-7.00000,-34.80000,"7°S, 34.8°W",Parsed coordinates do not match original
+-1,-66,-1.80000,-66.00000,"1.8°S, 66°W",Parsed coordinates do not match original
+-6,-61,-6.00000,-61.80000,"6°S, 61.8°W",Parsed coordinates do not match original
+-4,-63,-4.00000,-63.20000,"4°S, 63.2°W",Parsed coordinates do not match original
+-11,-65,-11.30000,-65.00000,"11.3°S, 65°W",Parsed coordinates do not match original
+-2,-52,-2.80000,-52.00000,"2.8°S, 52°W",Parsed coordinates do not match original
+-7,-71,-7.00000,-71.50000,"7°S, 71.5°W",Parsed coordinates do not match original
+41,-71,41.50000,-71.00000,"41.5°N, 71°W",Parsed coordinates do not match original
+-1,-48,-1.00000,-48.30000,"1°S, 48.3°W",Parsed coordinates do not match original
+-3,-64,-3.00000,-64.30000,"3°S, 64.3°W",Parsed coordinates do not match original
+-1,-57,-1.70000,-57.00000,"1.7°S, 57°W",Parsed coordinates do not match original
+-2,-66,-2.50000,-66.00000,"2.5°S, 66°W",Parsed coordinates do not match original
+34,-77,34.80000,-77.00000,"34.8°N, 77°W",Parsed coordinates do not match original
+-9,-71,-9.00000,-71.30000,"9°S, 71.3°W",Parsed coordinates do not match original
+-4,-70,-4.30000,-70.00000,"4.3°S, 70°W",Parsed coordinates do not match original
+37,-75,37.00000,-75.80000,"37°N, 75.8°W",Parsed coordinates do not match original
+-5,-70,-5.00000,-70.20000,"5°S, 70.2°W",Parsed coordinates do not match original
+46,-90,46.20000,-90.00000,"46.2°N, 90°W",Parsed coordinates do not match original
+-9,-49,-9.00000,-49.80000,"9°S, 49.8°W",Parsed coordinates do not match original
+37,-76,37.80000,-76.00000,"37.8°N, 76°W",Parsed coordinates do not match original
+-9,-42,-9.70000,-42.00000,"9.7°S, 42°W",Parsed coordinates do not match original
+40,-74,40.30000,-74.00000,"40.3°N, 74°W",Parsed coordinates do not match original
+-1,-56,-1.70000,-56.00000,"1.7°S, 56°W",Parsed coordinates do not match original
+41,-75,41.00000,-75.50000,"41°N, 75.5°W",Parsed coordinates do not match original
+46,-84,46.20000,-84.00000,"46.2°N, 84°W",Parsed coordinates do not match original
+-3,-63,-3.30000,-63.00000,"3.3°S, 63°W",Parsed coordinates do not match original
 -31.6,-70.883,-31.60000,-71.11667,31° 36′S-71° 07′ W,Parsed coordinates do not match original
--15.192,-69.043,-15.01694,69.03333,"15°11.5′ S, 69°2.6′ W",Parsed coordinates do not match original
-15.043,-89.669,15.00056,89.66667,15°02.604'N 89°40.126'W,Parsed coordinates do not match original
-16.873,-89.815,16.08389,89.80000,16°52.366'N 89°48.890'W,Parsed coordinates do not match original
 -30.6325,-71.6104,,,30.6325˚ S - 71.6104˚ W,Coordinate not parsed
 6.1572,-76.3894,,,"2˚69'26""N 76˚23'22""W",Coordinate not parsed
-19.3203,98.8297,19.32000,98.81667,"19˚19'13.2""N 98˚49'47.0""E",Parsed coordinates do not match original
 -3.8078,-70.2558,,,"S 03˚ 48’ 28"" - W 70˚ 15’ 21""",Coordinate not parsed
 -22.9583,-43.25,-23.00000,-43.18333,"22°55'S–23°00'S, 043°11'W–043°19'W",Parsed coordinates do not match original
--13.055,-71.546,-13.00083,71.53333,"13°03.30'S, 71°32.78'W",Parsed coordinates do not match original
 10.972,-84.345,,,"10.972°N, 84.345W",Coordinate not parsed
 -29.4467,-50.5801,-29.48333,-50.21667,29°29'S and 50°13'W,Parsed coordinates do not match original
 -19.6417,-42.55,,,"19°48'–19°29'S, and 42°38'–42°28'W",Coordinate not parsed
--22.5911,-52.2439,-22.58333,-52.23500,"22°35'28.0""S, 52°14'38.1""W,",Parsed coordinates do not match original
--22.6066,-52.2524,-22.61333,-52.26000,"22°36'23.8""S, 52°15'08.6""W",Parsed coordinates do not match original
--33.9483,18.8611,-33.94733,18.85150,"33°56′53.84″ S, 18°51′40.09″ E",Parsed coordinates do not match original
--33.823,-70.056,-33.06917,70.05000,"33°49.406'S, 70°03.373'W",Parsed coordinates do not match original
--33.38,-70.667,-33.03389,70.66667,"33°22.812'S, 70°40.027'W",Parsed coordinates do not match original
--33.828,-70.054,-33.06917,70.05000,"33°49.682'S, 70°03.260'W",Parsed coordinates do not match original
--33.823,-70.056,-33.06917,70.05000,"33°49.406'S, 70°03.373'W",Parsed coordinates do not match original
--33.785,-70.227,-33.06861,70.21667,"33°47.127'S, 70°13.625'W",Parsed coordinates do not match original
--35.832,-72.514,-35.06917,72.50000,"35°49.948'S, 72°30.861'W,",Parsed coordinates do not match original
--45.5,-72.676,-45.05000,72.66667,"45°30.015'S, 72°40.587'W",Parsed coordinates do not match original
--45.353,-72.707,-45.03361,72.70000,"45°21.184'S, 72°42.427'W",Parsed coordinates do not match original
--45.683,-72.056,-45.06694,72.05000,"45°41.008'S, 72°03.362'W",Parsed coordinates do not match original
--45.22,-72.213,-45.01750,72.20000,"45°13.210'S, 72°12.775'W",Parsed coordinates do not match original
--45.267,-72.231,-45.01833,72.21667,"45°16.047'S, 72°13.851'W",Parsed coordinates do not match original
-9.274,-70.218,9.01833,70.21667,"9°16.435'N, 70°13.102'W",Parsed coordinates do not match original
-10.16,-63.793,10.00250,63.78333,"10°09.617'N, 63°47.605'W,",Parsed coordinates do not match original
-7.957,-72.073,7.08528,72.06667,"7°57.411'N, 72°04.394'W",Parsed coordinates do not match original
-8.147,-71.934,8.00222,71.93333,"8°08.817'N, 71°56.027'W",Parsed coordinates do not match original
-8.652,-71.131,8.05250,71.11667,"8°39.142'N, 71°07.885'W",Parsed coordinates do not match original
-8.652,-71.131,8.05250,71.11667,"8°39.142'N, 71°07.885'W",Parsed coordinates do not match original
-8.564,-70.939,8.05083,70.93333,"8°33.85'N, 70°56.32'W",Parsed coordinates do not match original
-8.579,-70.972,8.05111,70.96667,"8°34.76'N, 70°58.33'W",Parsed coordinates do not match original
-8.572,-70.965,8.05111,70.95000,"8°34.34'N, 70°57.87'W",Parsed coordinates do not match original
-7.977,-72.075,7.08556,72.06667,"7°58.593'N, 72°04.515'W",Parsed coordinates do not match original
-8.556,-70.965,8.05083,70.95000,"8°33.34'N, 70°57.87'W",Parsed coordinates do not match original
-10.163,-63.793,10.00250,63.78333,"10°09.753'N, 63°47.587'W",Parsed coordinates do not match original
-8.524,-70.896,8.05028,70.88333,"8°31.43'N, 70°53.77'W",Parsed coordinates do not match original
+-33.785,-70.227,-33.78545,-70.22708,"33°47.127'S, 70°13.625'W",Parsed coordinates do not match original
+8.572,-70.965,8.57233,-70.96450,"8°34.34'N, 70°57.87'W",Parsed coordinates do not match original
+8.556,-70.965,8.55567,-70.96450,"8°33.34'N, 70°57.87'W",Parsed coordinates do not match original
 -4.1333,-40.2,-13.88333,-45.70000,"(13°53' S, 45°42' W)",Parsed coordinates do not match original
 25.2481,-100.035,25.24806,-100.03528,"25°14'53""N 100°02'07""W",Parsed coordinates do not match original
 -34.4874,20.045,-34.38389,19.61472,"34°23'02″ S, 19°36'53″ E",Parsed coordinates do not match original
--33.9648,22.9821,-33.95233,22.97850,"33° 57' 53.14"" S 22° 58' 55.71"" E",Parsed coordinates do not match original
 -29.0628,30.5926,29.08250,30.60333,29°04’57’’ N 30°36’12’’ E,Parsed coordinates do not match original
 -26.1466,28.6809,26.14583,28.71233,26°08’75’’N 28°42’74’’E,Parsed coordinates do not match original
--22.798,30.453,-22.06861,30.45000,"S22°47.863’, E30°27.194’",Parsed coordinates do not match original
--26.114,26.246,-26.00167,26.23333,26°06.861S 26°14.760 E,Parsed coordinates do not match original
--27.09,26.042,-27.00139,26.03333,27°05.404' S 26°02.532 E,Parsed coordinates do not match original
--27.182,27.621,-27.01667,27.61667,27°10.920' S 27°37.237 E,Parsed coordinates do not match original
--26.106,26.784,-26.00167,26.78333,26°06.363' S 26°47.064' E,Parsed coordinates do not match original
--27.203,26.972,-27.01722,26.96667,27°12.159' S 26°58.330' E,Parsed coordinates do not match original
--26.726,26.801,-26.06750,26.80000,26°43.565' S 26°48.075' E,Parsed coordinates do not match original
--26.712,28.302,-26.06722,28.30000,26°42.704' S 28°18.125 E,Parsed coordinates do not match original
--27.131,30.359,-27.00194,30.35000,27°07.863' S 30°21.558' E,Parsed coordinates do not match original
--26.114,26.246,-26.00167,26.23333,26°06.861'S 26° 14.760'E,Parsed coordinates do not match original
--27.09,26.042,-27.00139,26.03333,27°05.404'S 26°02.532'E,Parsed coordinates do not match original
--27.182,27.621,-27.01667,27.61667,27°10.920'S 27°37.237'E,Parsed coordinates do not match original
--26.106,26.784,-26.00167,26.78333,26°06.363'S 26°47.064'E,Parsed coordinates do not match original
--27.203,26.972,-27.01722,26.96667,27°12.159'S 26°58.330'E,Parsed coordinates do not match original
--26.726,26.801,-26.06750,26.80000,26°43.565'S 26°48.075'E,Parsed coordinates do not match original
--26.712,28.302,-26.06722,28.30000,26°42.704'S 28° 18.125'E,Parsed coordinates do not match original
--26.703,28.307,-26.06722,28.30000,26°42.205'S 28° 18.447'E,Parsed coordinates do not match original
--26.592,30.498,-26.05139,30.48333,26°35.548'S 30°29.853'E,Parsed coordinates do not match original
--25.766,29.984,-25.06806,29.98333,25°45.940'S 29°59.041'E,Parsed coordinates do not match original
--27.537,29.196,-27.05056,29.18333,27°32.233'S 29°11.767'E,Parsed coordinates do not match original
--27.131,30.359,-27.00194,30.35000,27°07.863'S 30°21.558'E,Parsed coordinates do not match original
 -24,30,,,24°S 30.5°'E,Coordinate not parsed
 -9.1267,147.155,-9.12670,147.15460,"9.1267°S, 147.1546°E",Parsed coordinates do not match original
 -5.6592,142.635,,,"5.6592S, 142.6354°E",Coordinate not parsed
-21.1787,106.708,21.17320,106.70927,"21° 10′ 43.392″ N, 106° 42′ 29.556″ E",Parsed coordinates do not match original
-21.1965,106.736,21.18940,106.73733,"21° 11′ 47.364″ N, 106° 44′ 9.24″ E",Parsed coordinates do not match original
-21.1926,106.739,21.19233,106.74753,"21° 11′ 33.54″ N, 106° 44′ 18.852″ E",Parsed coordinates do not match original
-21.2099,106.693,21.21007,106.69846,"21° 12′ 35.604″ N, 106° 41′ 34.9074″ E",Parsed coordinates do not match original
-21.1752,106.722,21.17807,106.72960,"21° 10′ 30.684″ N, 106° 43′ 19.776″ E",Parsed coordinates do not match original
-21.1942,106.723,21.18773,106.72940,"21° 11′ 39.264″ N, 106° 43′ 22.764″ E",Parsed coordinates do not match original
-21.1806,106.727,21.16873,106.72587,"21° 10′ 50.124″ N, 106° 43′ 36.552″ E",Parsed coordinates do not match original
-21.1763,106.729,21.17860,106.72347,"21° 10′ 34.716″ N, 106° 43′ 45.408″ E",Parsed coordinates do not match original
-21.1805,106.729,21.17820,106.72320,"21° 10′ 49.692″ N, 106° 43′ 43.392″ E",Parsed coordinates do not match original
-21.1751,106.733,21.17387,106.72520,"21° 10′ 30.432″ N, 106° 43′ 58.512″ E",Parsed coordinates do not match original
-21.213,106.708,21.21513,106.70973,"21° 12′ 46.908″ N, 106° 42′ 28.584″ E",Parsed coordinates do not match original
-21.1777,106.733,21.18047,106.71680,"21° 10′ 39.828″ N, 106° 43′ 58.008″ E",Parsed coordinates do not match original
-21.1765,106.713,21.17573,106.70073,"21° 10′ 35.544″ N, 106° 42′ 46.044″ E",Parsed coordinates do not match original
-18.722,109.868,18.06750,109.86667,"18°43.30′ N, 109°52.09′ E",Parsed coordinates do not match original
-19.226,109.74,19.01750,109.73333,"19°13.57′ N, 109°44.37′ E",Parsed coordinates do not match original
 -17.5144,145.475,-17.51441,145.47526,"17.51441°S, 145.47526°E",Parsed coordinates do not match original
 -30.16,137.98,,,"30.16°S, 137.98",Coordinate not parsed
 -29.9192,121.151,,,"29.91917°S, 121.1514E",Coordinate not parsed
 6.08389,20.3936,,,"65′02″ N, 20°23′37″ E",Coordinate not parsed
-19.3092,-91.1099,19.30333,-91.10867,"19°18′55.20″ N, 91°06′59.52″ W",Parsed coordinates do not match original
-43.459,-8.337,43.03528,8.33333,"43°27.555′ N, 008°20.199′ W",Parsed coordinates do not match original
-43.459,-8.337,43.03528,8.33333,"43°27.530′ N, 008°20.192′ W",Parsed coordinates do not match original
-55.7167,12.5583,55.71667,12.55000,"55˚43'N, 12˚33.5'E",Parsed coordinates do not match original
-55.224,11.765,55.01750,11.75000,"55˚13.436'N,11˚45.920'E",Parsed coordinates do not match original
-55.677,11.103,55.06667,11.10000,"55˚40.634'N,11˚6.205'e",Parsed coordinates do not match original
-54.66,11.367,54.05250,11.36667,"54˚39.6'N, 11˚22.0'E",Parsed coordinates do not match original
-54.66,11.367,54.05250,11.36667,"54˚39.6'N, 11˚22.0'E",Parsed coordinates do not match original
-17.449,104.875,17.03500,104.86667,"17˚26.936N, 104˚52.499e",Parsed coordinates do not match original
-18.734,108.871,18.06778,108.86667,"18˚44.01'N, 108˚52.26'E",Parsed coordinates do not match original
-54.65,18.563,54.05250,18.55000,"54˚39.0'N, 18˚33.8'E",Parsed coordinates do not match original
-54.533,18.803,54.05056,18.80000,"54˚32.0'N, 18˚48.2'e",Parsed coordinates do not match original
-54.512,18.767,54.05000,18.76667,"54˚30.7N, 18˚46.0E",Parsed coordinates do not match original
-54.495,18.728,54.03583,18.71667,"54˚29.7'N, 18˚43.7'e",Parsed coordinates do not match original
-54.462,18.612,54.03528,18.60000,"54˚27.7'N, 18˚36.7'E",Parsed coordinates do not match original
-54.45,18.58,54.03528,18.56667,"54˚27.0'N, 18˚34.8'E",Parsed coordinates do not match original
--24.528,-47.1947,-24.52750,-47.19750,"24°31′40.65″ S, 47°11′40.85″ W",Parsed coordinates do not match original
-37.785,128.562,37.06861,128.55000,"37°47.074′ N, 128°33.735′ E",Parsed coordinates do not match original
-37.575,-7.535,37.05111,7.53333,37°34.5′ N 7°32.100′ W,Parsed coordinates do not match original
--22.7691,113.705,-22.78053,113.70813,"22°46′8.832″ S, 113°42′16.488″ E",Parsed coordinates do not match original
--22.7691,113.705,-22.78053,113.70813,"22°46″8.832″ S, 113°42′16.488″ E",Parsed coordinates do not match original
--24.114,27.803,-24.00167,27.80000,"24°06.823′ S, 27°48.153′ E",Parsed coordinates do not match original
--11.3724,29.5649,-11.37733,29.56067,"11°22′20.64″ S, 29°33′53.64″ E",Parsed coordinates do not match original
--10.7297,29.0936,-10.73200,29.09933,"10°43′46.92″ S, 29°05′36.96″ E",Parsed coordinates do not match original
--12.1156,29.8472,-12.10267,29.84867,"12°06′56.16″ S, 29°50′49.92″ E",Parsed coordinates do not match original
--10.4702,29.0245,-10.47867,29.02000,"10°28′12.72″ S, 29°01′28.2″ E",Parsed coordinates do not match original
--19.0626,22.3901,-19.05500,22.38833,"19°03′45.3″ S, 22°23′24.3″ E",Parsed coordinates do not match original
--23.984,28.405,-23.08583,28.40000,"23°59.049′ S, 28°24.281′ E",Parsed coordinates do not match original
--18.962,22.3739,-18.95333,22.36833,"18°57′43.2″ S, 22°22′26.1″ E",Parsed coordinates do not match original
-2.87219,-60.7813,2.88133,-60.77800,"2°52′19.88″ N, 60°46′52.68″ W",Parsed coordinates do not match original
--4.18047,-55.2394,-4.17833,-55.24667,"04°10′49.7″ S, 55°14′21.8″ W",Parsed coordinates do not match original
--15.4069,-39.5338,-15.41500,-39.54667,"15°24′24.9″ S, 39°32′01.8″ W",Parsed coordinates do not match original
--14.1502,-39.0924,-14.16000,-39.09667,"14°09′00.6″ S, 39°05′32.8″ W",Parsed coordinates do not match original
--13.4468,-44.5529,-13.44167,-44.55500,"13°26′48.5″ S, 44°33′10.3″ W",Parsed coordinates do not match original
--13.3821,-41.8944,-13.37833,-41.89833,"13°22′55.7″ S, 41°53′39.9″ W",Parsed coordinates do not match original
--13.482,-41.8652,-13.46833,-41.86167,"13°28′55.1″ S, 41°51′54.7″ W",Parsed coordinates do not match original
--19.1259,-40.2406,-19.11833,-40.23500,"19°07′33.1″ S, 40°14′26.1″ W",Parsed coordinates do not match original
--20.4721,-41.8116,-20.47500,-41.81167,"20°28′19.5″ S, 41°48′41.7″ W",Parsed coordinates do not match original
--20.4691,-41.7229,-20.48000,-41.72500,"20°28′08.8″ S, 41°43′22.5″ W",Parsed coordinates do not match original
--20.6628,-40.8454,-20.66000,-40.84333,"20°39′76.6″ S, 40°50′72.6″ W",Parsed coordinates do not match original
--19.8752,-40.5303,-19.88000,-40.51833,"19°52′30.8″ S, 40°31′49.1″ W",Parsed coordinates do not match original
--22.4489,-43.0009,-22.43333,-43.00667,"22°26′56.0″ S, 43°00′03.4″ W",Parsed coordinates do not match original
--26.7671,-51.8305,-26.77767,-51.82983,"26°46′1.66″ S, 51°49′49.79″ W",Parsed coordinates do not match original
--12.8034,-46.3685,-12.80333,-46.37500,"12°48′12.2″ S, 46°22′06.5″ W",Parsed coordinates do not match original
--20.6563,-40.8369,-20.66000,-40.84833,"20°39′22.6″ S, 40°50′12.9″ W",Parsed coordinates do not match original
--26.5517,-52.3249,-26.55000,-52.32833,"26°33′06.0″ S, 52°19′29.7″ W",Parsed coordinates do not match original
--1.11512,-51.9865,-1.10717,-51.99183,"1°06′54.43″ S, 51°59′11.51″ W",Parsed coordinates do not match original
--45.948,-67.547,-45.08500,67.53333,"45°56.864′ S, 67°32.803′ W",Parsed coordinates do not match original
--45.868,-67.474,-45.08389,67.46667,"45°52.059′ S, 67°28.443′ W",Parsed coordinates do not match original
--23.508,-45.199,-23.05000,45.18333,"23°30.468' S, 45°11.923' W",Parsed coordinates do not match original
-33.9241,134.064,33.93000,134.05633,"33°55′26.8″N, 134°03′49.38″E",Parsed coordinates do not match original
-28.492,127.987,28.03583,127.98333,"28°29.5′ N, 127°59.2′ E",Parsed coordinates do not match original
-44.59,144.702,44.05139,144.70000,"44°35.4′ N, 144°42.1′ E",Parsed coordinates do not match original
-31.497,128.527,31.03583,128.51667,"31°29.8′ N, 128°31.6′ E",Parsed coordinates do not match original
--32.5384,-52.5394,-32.53833,-52.54667,"32°32′18.3″ S, 52°32′21.8″ W",Parsed coordinates do not match original
-26.804,127.87,26.06889,127.86667,"26°48.23′ N, 127°52.18′ E",Parsed coordinates do not match original
-31.313,131.467,31.01889,131.46667,"31°18.80′ N, 131°28.00′ E",Parsed coordinates do not match original
-26.55,127.538,26.05083,127.53333,"26°33.00′ N, 127°32.30′ E",Parsed coordinates do not match original
-26.825,127.7,26.06917,127.70000,"26°49.50′ N, 127°42.00′ E",Parsed coordinates do not match original
-26.244,127.517,26.01778,127.51667,"26°14.64′ N, 127°31.01′ E",Parsed coordinates do not match original
-27.981,129.28,27.08556,129.26667,"27°58.83′ N, 129°16.80′ E",Parsed coordinates do not match original
-26.536,127.733,26.05056,127.71667,"26°32.18′ N, 127°43.96′ E",Parsed coordinates do not match original
-26.318,127.426,26.01917,127.41667,"26°19.10′ N, 127°25.56′ E",Parsed coordinates do not match original
-26.246,127.532,26.01778,127.51667,"26°14.75′ N, 127°31.90′ E",Parsed coordinates do not match original
-28.153,129.525,28.00250,129.51667,"28°09.20′ N, 129°31.50′ E",Parsed coordinates do not match original
-26.548,127.732,26.05056,127.71667,"26°32.90′ N, 127°43.94′ E",Parsed coordinates do not match original
+17.449,104.875,17.44893,104.87498,"17˚26.936N, 104˚52.499e",Parsed coordinates do not match original
+-23.984,28.405,-23.98415,28.40468,"23°59.049′ S, 28°24.281′ E",Parsed coordinates do not match original
 2.067,-82.1,,,"24′ N, 82°06′ W",Coordinate not parsed
 3.117,-83.117,,,"37′ N, 83°07′ W",Coordinate not parsed
-29.8486,102.304,29.83417,102.30267,"29°50′55.05″ N, 102°18′16.16″ E",Parsed coordinates do not match original
--42.677,146.623,-42.06667,146.61667,"42°40.6′ S, 146°37.4′ E",Parsed coordinates do not match original
--42.883,147.218,-42.08417,147.21667,"42°53.0′ S, 147°13.1′ E",Parsed coordinates do not match original
-27.907,98.659,27.08444,98.65000,"27°54.41′ N, 98°39.55′ E",Parsed coordinates do not match original
--31.3976,-65.41,-31.38833,-65.41500,"31°23′51.3″S, 65°24′35.9″W",Parsed coordinates do not match original
--32.7965,-65.4658,-32.79000,-65.46500,"32°47′47.4″S, 65°27′56.9″W",Parsed coordinates do not match original
--30.8809,-64.5335,-30.87000,-64.54500,"30°52′51.2″S, 64°32′00.7″W",Parsed coordinates do not match original
--30.8442,-64.4747,-30.83500,-64.48083,"30°50′39.1″S, 64°28′28.85″W",Parsed coordinates do not match original
--32.3335,-64.3616,-32.34333,-64.36500,"32°20′00.6″S, 64°21′41.9″W",Parsed coordinates do not match original
--30.8938,-64.5338,-30.89333,-64.54500,"30°53′37.6″S, 64°32′01.7″W",Parsed coordinates do not match original
--30.9829,-64.112,-30.97667,-64.10167,"30°58′58.6″S, 64°06′43.1″W",Parsed coordinates do not match original
-38.672,35.526,38.06667,35.51667,"38°40.30′ N, 035°31.57′ E",Parsed coordinates do not match original
-38.539,35.531,38.05056,35.51667,"38°32.31′ N, 035°31.84′ E",Parsed coordinates do not match original
-41.589,1.835,41.05139,1.83333,"41°35.31′ N, 01°50.07′ E",Parsed coordinates do not match original
 5.083,-29.533,,,"55′N, 29°32′W",Coordinate not parsed
--58.739,-25.175,-58.06778,25.16667,"58°44.35′ S, 25°10.48′ W",Parsed coordinates do not match original
--65.336,-54.239,-65.03333,54.23333,"65°20.15′ S, 54°14.35′ W",Parsed coordinates do not match original
-24.588,-17.078,24.05139,17.06667,"24°35.3′N, 17°4.7′W",Parsed coordinates do not match original
+-58.739,-25.175,-58.73917,-25.17467,"58°44.35′ S, 25°10.48′ W",Parsed coordinates do not match original
 1.1,-35.517,,,"16′N, 35°31′W",Coordinate not parsed
-43.833,-6.148,43.08333,6.13333,"43°50.0'N, 06°08.9'W",Parsed coordinates do not match original
 21.1583,-156.585,21.15833,-156.58472,"21°9′30″N, 156°35′5″W",Parsed coordinates do not match original
-1.785,96.978,1.06861,96.96667,"1°47.1′N, 96°58.7′E",Parsed coordinates do not match original
-43.513,18.013,18.00000,-43.05000,"43°30.767’W, 18°00.799’S",Parsed coordinates do not match original
--12.528,49.178,-12.05028,49.16667,"12° 31.667' S, 49° 10.667' E",Parsed coordinates do not match original
--21.264,47.419,-21.01806,47.41667,"21° 15.846' S, 47° 25.161' E",Parsed coordinates do not match original
--21.257,47.418,-21.01806,47.41667,"21° 15.442' S, 47° 25.096' E",Parsed coordinates do not match original
--21.258,47.36,-21.01806,47.35000,"21° 15.453' S, 47° 21.609' E",Parsed coordinates do not match original
--27.6303,-48.4622,-27.61833,-48.45000,"27°37′49.1″S, 48°27′44.0″W",Parsed coordinates do not match original
-48.7261,11.3232,48.71833,11.32667,48°43′34.1″N 11°19′23.6″E,Parsed coordinates do not match original
-53.4795,12.3357,53.47233,12.34100,53°28′46.34″N 12°20′08.46″E,Parsed coordinates do not match original
-42.1328,22.807,42.11833,22.80333,42°07′ 58.1″N 22°48′25.2″E,Parsed coordinates do not match original
-55.38,38.57,55.03389,38.56667,55°22.8′N 38°34.2′ E,Parsed coordinates do not match original
-51.786,87.231,51.06861,87.21667,51°47.16′ N 87°13.86′ E,Parsed coordinates do not match original
-31.1339,-77.1004,31.14917,-77.10867,"31°81.95 N, 77°61.52 W",Parsed coordinates do not match original
-31.1346,-77.1003,31.14283,-77.10267,"31°84.57 N, 77°61.16 W",Parsed coordinates do not match original
-38.607,-73.889,38.05167,73.88333,"38°36.39 N, 73°53.33 W",Parsed coordinates do not match original
-24.63,-81.972,24.05194,81.96667,"24°37.78 N, 81°58.33 W",Parsed coordinates do not match original
-28.62,-115.306,28.05194,115.30000,"28°37.17 N, 115°18.33 W",Parsed coordinates do not match original
-31.722,-79.195,31.06750,79.18333,"31°43.33 N, 79°11.67 W",Parsed coordinates do not match original
-30.1521,-79.1012,30.15833,-79.10283,"30°97.50 N, 79°64.17 W",Parsed coordinates do not match original
-31.25,-79.931,31.01806,79.91667,"31°15.00 N, 79°55.83 W",Parsed coordinates do not match original
--3.03,134.835,,,"3°1.8′S, 134°50.1′E",Coordinate not parsed
-17.085,121.144,17.00139,121.13333,"17° 05.08′ N, 121° 08.62′ E",Parsed coordinates do not match original
-17.021,121.117,17.00028,121.11667,"17° 01.27′ N, 121° 07.00′ E",Parsed coordinates do not match original
-17.014,121.128,17.00000,121.11667,"17° 00.81′ N, 121° 07.69′ E",Parsed coordinates do not match original
-17.122,121.17,17.00194,121.16667,"17° 07.34′ N, 121° 10.20′ E",Parsed coordinates do not match original
-49.924,-6.107,49.08472,6.10000,"49°55.43′ N, 06°6.41′ W",Parsed coordinates do not match original
-49.908,-6.452,49.08444,6.45000,"49°54.46′ N, 06°27.09′ W",Parsed coordinates do not match original
-49.904,-6.419,49.08444,6.41667,"49°54.24′ N, 06°25.13′ W",Parsed coordinates do not match original
-49.896,-6.362,49.08417,6.35000,"49°53.77′ N, 06°21.71′ W",Parsed coordinates do not match original
-49.963,-6.306,49.08528,6.30000,"49°57.77′ N, 06°18.36′ W",Parsed coordinates do not match original
-49.896,-6.351,49.08417,6.35000,"49°53.78′ N, 06°21.03′ W",Parsed coordinates do not match original
-49.923,-6.31,49.08472,6.30000,"49°55.36′ N, 06°18.57′ W",Parsed coordinates do not match original
-49.882,-6.352,49.08389,6.35000,"49°52.93′ N, 06°21.10′ W",Parsed coordinates do not match original
-49.923,-6.274,49.08472,6.26667,"49°55.36′ N, 06°16.43′ W",Parsed coordinates do not match original
-49.967,-6.36,49.08556,6.35000,"49°58.03′ N, 06°21.60′ W",Parsed coordinates do not match original
-49.92,-6.309,49.08472,6.30000,"49°55.18′ N, 06°18.56′ W",Parsed coordinates do not match original
-49.954,-6.295,49.08528,6.28333,"49°57.25′ N, 06°17.70′ W",Parsed coordinates do not match original
-49.963,-6.306,49.08528,6.30000,"49°57.77′ N, 06°18.36′ W",Parsed coordinates do not match original
-49.908,-6.452,49.08444,6.45000,"49°54.46′ N, 06°27.09′ W",Parsed coordinates do not match original
-49.895,-6.351,49.08417,6.35000,"49°53.68′ N, 06°21.05′ W",Parsed coordinates do not match original
-49.958,-6.29,49.08528,6.28333,"49°57.46′ N, 06°17.41′ W",Parsed coordinates do not match original
-49.959,-6.296,49.08528,6.28333,"49°57.55′ N, 06°17.76′ W",Parsed coordinates do not match original
-49.924,-6.275,49.08472,6.26667,"49°55.44′ N, 06°16.48′ W",Parsed coordinates do not match original
-49.936,-6.35,49.08500,6.33333,"49°56.13′ N, 06°20.97′ W",Parsed coordinates do not match original
-49.943,-6.338,49.08500,6.33333,"49°56.6′ N, 06°20.3′ W",Parsed coordinates do not match original
-49.96,-6.348,49.08528,6.33333,"49°57.6′ N, 06°20.9′ W",Parsed coordinates do not match original
-49.973,-6.28,49.08556,6.26667,"49°58.4′ N, 06°16.8′ W",Parsed coordinates do not match original
-49.935,-6.315,49.08500,6.30000,"49°56.1′ N, 06°18.9′ W",Parsed coordinates do not match original
-49.904,-6.335,49.08444,6.33333,"49°54.23′ N, 06°20.12′ W",Parsed coordinates do not match original
-49.961,-6.294,49.08528,6.28333,"49°57.68′ N, 06°17.66′ W",Parsed coordinates do not match original
-49.908,-6.301,49.08444,6.30000,"49°54.49′ N, 06°18.06′ W",Parsed coordinates do not match original
-49.957,-6.31,49.08528,6.30000,"49°57.43′ N, 06°18.59′ W",Parsed coordinates do not match original
-49.924,-6.279,49.08472,6.26667,"49°55.43′ N, 06°16.73′ W",Parsed coordinates do not match original
-49.906,-6.3,49.08444,6.30000,"49°54.35′ N, 06°18.02′ W",Parsed coordinates do not match original
-49.975,-6.295,49.08556,6.28333,"49°58.51′ N, 06°17.70′ W",Parsed coordinates do not match original
-49.92,-6.309,49.08472,6.30000,"49°55.18′ N, 06°18.56′ W",Parsed coordinates do not match original
-49.941,-6.335,49.08500,6.33333,"49°56.48′ N, 06°20.09′ W",Parsed coordinates do not match original
-49.896,-6.352,49.08417,6.35000,"49°53.74′ N, 06°21.10′ W",Parsed coordinates do not match original
-49.928,-6.28,49.08472,6.26667,"49°55.68′ N, 06°16.82′ W",Parsed coordinates do not match original
-49.931,-6.345,49.08472,6.33333,"49°55.87′ N, 06°20.70′ W",Parsed coordinates do not match original
-49.916,-6.284,49.08444,6.28333,"49°54.93′ N, 06°17.02′ W",Parsed coordinates do not match original
-49.894,-6.338,49.08417,6.33333,"49°53.62′ N, 06°20.25′ W",Parsed coordinates do not match original
-49.893,-6.353,49.08417,6.35000,"49°53.59′ N, 06°21.16′ W",Parsed coordinates do not match original
-49.914,-6.284,49.08444,6.28333,"49°54.82′ N, 06°17.01′ W",Parsed coordinates do not match original
-49.92,-6.309,49.08472,6.30000,"49°55.18′ N, 06°18.56′ W",Parsed coordinates do not match original
-49.958,-6.29,49.08528,6.28333,"49°57.46′ N, 06°17.41′ W",Parsed coordinates do not match original
-48.652,-2.298,48.05250,2.28333,"48°39.1′ N, 02°17.9′ W",Parsed coordinates do not match original
-48.632,-4.563,48.05194,4.55000,"48°37.9′ N, 04°33.8′ W",Parsed coordinates do not match original
-42.492,-8.867,42.03583,8.86667,"42°29.53′ N, 08°52.03′ W",Parsed coordinates do not match original
-49.924,-6.274,49.08472,6.26667,"49°55.43′ N, 06°16.41′ W",Parsed coordinates do not match original
-49.924,-6.274,49.08472,6.26667,"49°55.42′ N, 06°16.41′ W",Parsed coordinates do not match original
-49.924,-6.274,49.08472,6.26667,"49°55.42′ N, 06°16.42′ W",Parsed coordinates do not match original
-49.922,-6.27,49.08472,6.26667,"49°55.33′ N, 06°16.20′ W",Parsed coordinates do not match original
-49.964,-6.254,49.08528,6.25000,"49°57.86′ N, 06°15.21′ W",Parsed coordinates do not match original
-49.943,-6.256,49.08500,6.25000,"49°56.56′ N, 06°15.35′ W",Parsed coordinates do not match original
-49.965,-6.253,49.08528,6.25000,"49°57.87′ N, 06°15.18′ W",Parsed coordinates do not match original
-49.911,-6.341,49.08444,6.33333,"49°54.68′ N, 06°20.45′ W",Parsed coordinates do not match original
-49.941,-6.335,49.08500,6.33333,"49°56.48′ N, 06°20.09′ W",Parsed coordinates do not match original
-49.982,-6.304,49.08556,6.30000,"49°58.93′ N, 06°18.21′ W",Parsed coordinates do not match original
-0.297,36.865,0.01861,36.85000,"0°17.806′ N, 36°51.927′ E",Parsed coordinates do not match original
+43.513,18.013,-18.01332,-43.51278,"43°30.767’W, 18°00.799’S",Parsed coordinates do not match original
+17.085,121.144,17.08467,121.14367,"17° 05.08′ N, 121° 08.62′ E",Parsed coordinates do not match original
+49.895,-6.351,49.89467,-6.35083,"49°53.68′ N, 06°21.05′ W",Parsed coordinates do not match original
+49.924,-6.275,49.92400,-6.27467,"49°55.44′ N, 06°16.48′ W",Parsed coordinates do not match original
+49.904,-6.335,49.90383,-6.33533,"49°54.23′ N, 06°20.12′ W",Parsed coordinates do not match original
+49.965,-6.253,49.96450,-6.25300,"49°57.87′ N, 06°15.18′ W",Parsed coordinates do not match original
 -39.702,-73.321,,,"S39°42.114/W73°19.244, ",Coordinate not parsed
-37.175,-109.927,37.01667,109.91667,37° 10.504N 109° 55.635W ,Parsed coordinates do not match original
-32.266,-2.395,32.01806,2.38333,32°15.947′ N 02°23.671′ W,Parsed coordinates do not match original
-39.0926,33.393,39.08667,33.39667,39°05′33.2″N 33°23′34.8″E,Parsed coordinates do not match original
-8.573,-79.02,8.05111,79.01667,"8°34.36’ N, 79°01.18’ W",Parsed coordinates do not match original
-8.589,-79.021,8.05139,79.01667,"8°35.36’ N, 79°01.24’ W",Parsed coordinates do not match original
-8.918,-79.534,8.08472,79.53333,"8°55.09’ N, 79°32.06’ W",Parsed coordinates do not match original
-8.809,-79.518,8.06889,79.51667,"8°48.52’ N, 79°31.07’ W",Parsed coordinates do not match original
-10.552,-85.719,10.05083,85.71667,"10°33.10’ N, 85°43.15’ W",Parsed coordinates do not match original
-57.13,-154.478,57.00194,154.46667,"57°07.8’ N, 154°28.7’ W",Parsed coordinates do not match original
+37.175,-109.927,37.17507,-109.92725,37° 10.504N 109° 55.635W ,Parsed coordinates do not match original
+32.266,-2.395,32.26578,-2.39452,32°15.947′ N 02°23.671′ W,Parsed coordinates do not match original
 18.4223,109.028,18.16667,108.86667,"18°10′ N, 108°52′ E",Parsed coordinates do not match original
 -29.0631,167.955,-29.06306,167.95472,"29°3′47″ S, 167°57′17″ E",Parsed coordinates do not match original
-20.92,96.56,20.08472,96.55000,20°55.20′N 96°33.60′E,Parsed coordinates do not match original
--22.826,-53.5527,-22.82767,-53.56500,"22°49′33.66″ S, 53°33′09.9″ W",Parsed coordinates do not match original
--37.625,142.337,-37.05194,142.33333,"37°37.494′ S, 142°20.226′ E",Parsed coordinates do not match original
-18.539,98.601,18.05056,98.60000,"18°32.31′ N, 98°36.048′ E",Parsed coordinates do not match original
--8.488,30.475,-8.03583,30.46667,"8°29.29′ S, 30°28.47′ E",Parsed coordinates do not match original
--51.077,-61.065,-51.00111,61.05000,51°04.608′ S 61°03.907′ W,Parsed coordinates do not match original
--72.292,170.49,-72.01861,170.48333,"72°17.5′ S, 170°29.4′ E",Parsed coordinates do not match original
--61.189,-54.72,-61.01694,54.71667,"61˚11.34′ S, 54°43.17′ W",Parsed coordinates do not match original
--72.285,170.498,-72.01861,170.48333,"72°17.1′ S, 170°29.9′ E",Parsed coordinates do not match original
--72.29,170.44,-72.01861,170.43333,"72°17.4′ S, 170°26.4′ E",Parsed coordinates do not match original
-41.395,41.533,41.03417,41.53333,41°23.7′N 041°32.0′E,Parsed coordinates do not match original
-41.405,41.532,41.03444,41.51667,41°24.3′N 041°31.9′E,Parsed coordinates do not match original
-40.345,41.695,40.03333,41.68333,40°20.7′N 041°41.7′E,Parsed coordinates do not match original
-40.337,41.695,40.03333,41.68333,40°20.2′N 041°41.7′E,Parsed coordinates do not match original
-41.207,24.795,41.01722,24.78333,"41°12.4′ N, 24°47.7′ E",Parsed coordinates do not match original
-44.305,9.212,44.01889,9.20000,"44°18.312′N, 9°12.702′E",Parsed coordinates do not match original
-45.057,13.586,,,"45°3.407′N, 13°35.158′E",Coordinate not parsed
-35.4009,25.0338,35.40683,25.04500,"35°24′3.41″N, 25°2′1.70″E",Parsed coordinates do not match original
-54.512,2.673,54.05000,2.66667,"54°30.73′N, 2°40.352′E",Parsed coordinates do not match original
-54.508,2.654,54.05000,2.65000,"54°30.478′N, 2°39.246′E",Parsed coordinates do not match original
-54.758,1.731,54.06806,1.71667,"54°45.489′N, 1°43.853′E",Parsed coordinates do not match original
-54.762,1.707,54.06806,1.70000,"54°45.7′N, 1°42.443′E",Parsed coordinates do not match original
-54.994,1.654,54.08583,1.65000,"54°59.635′N, 1°39.267′E",Parsed coordinates do not match original
-54.479,1.863,54.03556,1.85000,"54°28.71′N, 1°51.771′E",Parsed coordinates do not match original
-54.625,1.704,54.05194,1.70000,"54°37.473′N, 1°42.225′E",Parsed coordinates do not match original
-54.85,2.086,54.08361,2.08333,"54°51.011′N, 2°5.168′E",Parsed coordinates do not match original
-54.864,2.087,54.08361,2.08333,"54°51.859′N, 2°5.222′E",Parsed coordinates do not match original
-54.847,2.823,54.08333,2.81667,"54°50.798′N, 2°49.403′E",Parsed coordinates do not match original
-54.86,2.843,54.08361,2.83333,"54°51.625′N, 2°50.568′E",Parsed coordinates do not match original
-54.513,2.647,54.05000,2.63333,"54°30.8′N, 2°38.8′E",Parsed coordinates do not match original
-55.459,4.144,55.03528,4.13333,"55°27.544′N, 4°8.624′E",Parsed coordinates do not match original
-55.463,4.115,55.03528,4.10000,"55°27.768′N, 4°6.907′E",Parsed coordinates do not match original
-54.757,2.008,54.06806,2.00000,"54°45.396′N, 2°0.459′E",Parsed coordinates do not match original
-55.139,2.694,,,"55°8.323′N, 2°41.64′E",Coordinate not parsed
-55.458,4.144,55.03528,4.13333,"55°27.453′N, 4°8.622′E",Parsed coordinates do not match original
-54.452,2.268,54.03528,2.26667,"54°27.113′N, 2°16.064′E",Parsed coordinates do not match original
-55.46,4.137,55.03528,4.13333,"55°27.612′N, 4°8.219′E",Parsed coordinates do not match original
-55.459,4.171,55.03528,4.16667,"55°27.525′N, 4°10.267′E",Parsed coordinates do not match original
-54.517,2.677,54.05028,2.66667,"54°31.008′N, 2°40.609′E",Parsed coordinates do not match original
-54.514,2.676,54.05000,2.66667,"54°30.847′N, 2°40.535′E",Parsed coordinates do not match original
-54.143,7.872,,,"54°8.56′N, 7°52.3′E",Coordinate not parsed
-54.142,7.868,,,"54°8.52′N, 7°52.08′E",Coordinate not parsed
-55.284,6.731,55.01861,6.71667,"55°17.046′N, 6°43.88′E",Parsed coordinates do not match original
-55.293,6.754,55.01861,6.75000,"55°17.55′N, 6°45.238′E",Parsed coordinates do not match original
-53.786,7.054,53.06861,7.05000,"53°47.161′N, 7°3.225′E",Parsed coordinates do not match original
-53.823,7.875,53.06917,7.86667,"53°49.395′N, 7°52.498′E",Parsed coordinates do not match original
-53.815,7.898,53.06889,7.88333,"53°48.899′N, 7°53.863′E",Parsed coordinates do not match original
-53.825,7.227,53.06917,7.21667,"53°49.51′N, 7°13.64′E",Parsed coordinates do not match original
-53.829,7.202,53.06917,7.20000,"53°49.72′N, 7°12.13′E",Parsed coordinates do not match original
-45.078,13.632,,,"45°4.651′N, 13°37.891′E",Coordinate not parsed
+-37.625,142.337,-37.62490,142.33710,"37°37.494′ S, 142°20.226′ E",Parsed coordinates do not match original
+-8.488,30.475,-8.48817,30.47450,"8°29.29′ S, 30°28.47′ E",Parsed coordinates do not match original
+-51.077,-61.065,-51.07680,-61.06512,51°04.608′ S 61°03.907′ W,Parsed coordinates do not match original
+44.305,9.212,44.30520,9.21170,"44°18.312′N, 9°12.702′E",Parsed coordinates do not match original
+54.625,1.704,54.62455,1.70375,"54°37.473′N, 1°42.225′E",Parsed coordinates do not match original
+53.823,7.875,53.82325,7.87497,"53°49.395′N, 7°52.498′E",Parsed coordinates do not match original
 29.417,36.267,36.26667,29.41667,"29°25′ E, 36°16′ N",Parsed coordinates do not match original
-27.682,100.018,27.06667,100.01667,"27°40.9′ N, 100°01.05′ E",Parsed coordinates do not match original
--35.005,138.806,-35.00000,138.80000,"35°00.28′ S, 138°48.38′ E",Parsed coordinates do not match original
--26.113,-44.293,-26.00167,44.28333,"26°06.8′ S, 044°17.6′ W",Parsed coordinates do not match original
--13.611,-38.787,-13.05167,38.78333,"13°36.67′ S, 038°47.212′ W",Parsed coordinates do not match original
--3.992,-35.895,-3.08583,35.88333,"03°59.5′ S, 035°53.7′ W",Parsed coordinates do not match original
--17.501,-39.013,-17.05000,39.00000,"17°30.057′ S, 039°00.776′ W",Parsed coordinates do not match original
--17.776,-39.026,-17.06833,39.01667,"17°46.54′ S, 039°01.58′ W",Parsed coordinates do not match original
-3,-48.333,3.00000,48.33333,"03°00.0′ N, 048°20.0′ W",Parsed coordinates do not match original
--19.731,-39.44,-19.06750,39.43333,"19°43.857′ S, 039°26.372′ W",Parsed coordinates do not match original
--19.756,-39.527,-19.06806,39.51667,"19°45.36′ S, 039°31.6′ W",Parsed coordinates do not match original
--20.573,-38.059,-20.05111,38.05000,"20°34.37′ S, 038°03.53′ W",Parsed coordinates do not match original
--23.113,-44.293,-23.00167,44.28333,"23°06.8′ S, 044°17.6′ W",Parsed coordinates do not match original
--23.192,-44.472,-23.01694,44.46667,"23°11.5′ S, 044°28.3′ W",Parsed coordinates do not match original
--23.22,-44.582,-23.01750,44.56667,"23°13.2′ S, 044°34.9′ W",Parsed coordinates do not match original
--17.4262,-38.9713,-17.42167,-38.97667,"17°25′34.3″ S, 038°58′16.6″ W",Parsed coordinates do not match original
-34.956,58.755,34.08528,58.75000,"34°57.380′ N, 58°45.301′ E",Parsed coordinates do not match original
-19.498,-91.0306,19.49567,-91.01733,"19˚29'52.74""N 91˚01'50.04""W",Parsed coordinates do not match original
--3.423,-55.355,-3.43000,-55.35000,"3˚25'22.80""S, 55˚21'18.00""W",Parsed coordinates do not match original
--24.4688,-47.1203,-24.47700,-47.12000,"24˚28'7.62""S, 47˚7'13.20""W",Parsed coordinates do not match original
--24.17,-46.9258,-24.18167,-46.93017,"24˚10'11.9""S, 46˚55'32.81""W",Parsed coordinates do not match original
-37.575,-7.535,37.05111,7.53333,37˚34.5'N 7˚32.100'W,Parsed coordinates do not match original
-36.7219,-2.193,36.73000,-2.19483,"36˚43'18.8""N, 2˚11'34.69""W",Parsed coordinates do not match original
-26.9956,22.7228,26.98517,22.71700,"26˚59'44.11""N, 22˚43'22.02""E",Parsed coordinates do not match original
+-35.005,138.806,-35.00467,138.80633,"35°00.28′ S, 138°48.38′ E",Parsed coordinates do not match original
 -3.8423,-49.5703,,,"3°43'–5°15' S; 49°12–50°00' W,",Coordinate not parsed
 40.65,14.6,40.65000,14.58889,"40°39' N, 14°35'20"" E",Parsed coordinates do not match original
 35.3,138.333,,,"35°18.81' N, 138°20.96' E",Coordinate not parsed
 19.1333,103.783,,,"19°08.42' N, 103°47.13' E",Coordinate not parsed
--26.8535,-60.4125,-26.85833,-60.41500,"26˚51'12.5""S 60˚24'44.9""W",Parsed coordinates do not match original
--29.2059,-59.6601,-29.20167,-59.65667,"29˚12'21.1""S, 59˚39'36.4""W",Parsed coordinates do not match original
--30.918,-61.5826,-30.92833,-61.57500,"30˚55'04.7""S, 61˚34'57.5""W",Parsed coordinates do not match original
--31.8253,-60.4395,-31.82000,-60.43500,"31˚49'31.2""S, 60˚26'22.1""W",Parsed coordinates do not match original
--33.8911,-65.0015,-33.88333,-65.00833,"33˚53'28.0""S 65˚00'05.5""W",Parsed coordinates do not match original
--34.9976,-64.3019,-34.98833,-64.31167,"34˚59'51.3""S, 64˚18'06.7""W",Parsed coordinates do not match original
 29.0167,-13.58,,,"29°1' N, 13°35' W",Coordinate not parsed
-35.205,51.808,35.01722,51.80000,"35°12.3’ N, 51°48.5’ E",Parsed coordinates do not match original
 -18.9667,-48.2833,,,"18°58' S, 48°17' W",Coordinate not parsed
 26.65,142.15,,,"26°39' N, 142°09' E",Coordinate not parsed
 -22.2333,-42.9333,,,"23°14' S, 46°56' W",Coordinate not parsed
 -13.8264,-39.1422,,,"13°49'35""S,39°08'32""W",Coordinate not parsed
 -22.3833,-41.75,,,"22°23' S, 41°45' W",Coordinate not parsed
-51.518,-12.983,51.05028,12.98333,51˚31.1'N 12˚59.0'W,Parsed coordinates do not match original
-3.167,5.475,3.01667,5.46667,3˚10.0'N 5˚28.5'E,Parsed coordinates do not match original
-25.025,-19.2,,,25˚1.5'N 19˚12.0'W,Coordinate not parsed
--0.533,119.663,-0.05056,119.65000,0˚32.0'S 119˚39.8'E,Parsed coordinates do not match original
--3.628,131.44,-3.05194,131.43333,3˚37.7'S 131˚26.4'E,Parsed coordinates do not match original
-6.217,-5,6.01750,5.00000," 6˚13.00' N, 5˚0.00' W",Parsed coordinates do not match original
--21.249,47.372,-21.01778,47.36667,21˚14.921'S 47˚22.307'E,Parsed coordinates do not match original
-22.3002,114.017,22.31233,114.03067,"22˚18'0.74""N 114˚1'0.84""E",Parsed coordinates do not match original
-22.288,114.058,22.29500,114.06083,"22˚17'16.70""N 114˚3'28.65""E",Parsed coordinates do not match original
-34.988,139.306,34.08583,139.30000,34˚59.267'N 139˚18.378'E,Parsed coordinates do not match original
 -18.6167,22.0833,,,18.6167˚S 22.0833E,Coordinate not parsed
-40.15,0.923,40.00250,0.91667,40˚09.0'N 0˚55.4'E,Parsed coordinates do not match original
--3.098,134.838,,,3˚5.9'S 134˚50.3'E,Coordinate not parsed
--1.732,135.772,-1.06750,135.76667,1˚43.9'S 135˚46.3'E,Parsed coordinates do not match original
--2.935,135.748,-2.08500,135.73333,2˚56.1'S 135˚44.9'E,Parsed coordinates do not match original
--2.495,134.983,-2.03583,134.98333,2˚29.7'S 134˚59.0'E,Parsed coordinates do not match original
--3.072,135.603,,,3˚4.3'S 135˚36.2'E,Coordinate not parsed
-37.196,-109.872,37.01694,109.86667,37˚11.73'N 109˚52.29W,Parsed coordinates do not match original
-37.691,-110.226,37.06694,110.21667,37˚41.44'N 110˚13.56'W,Parsed coordinates do not match original
-37.725,-110.249,37.06750,110.23333,37˚43.52'N 110˚14.94'W,Parsed coordinates do not match original
 42.1333,-8.8167,,,"42°08' N,8°49' W",Coordinate not parsed
 42.4667,-8.85,,,"42°28' N, 8°51' W",Coordinate not parsed
 42.5333,-9.0167,,,"42°32' N, 9°01' W",Coordinate not parsed
 43.5833,-8.1667,,,"43°35' N, 8°10' W",Coordinate not parsed
-7.912,-8.924,7.08444,8.91667,7˚54.747N 8˚55.458W,Parsed coordinates do not match original
-9.2,-8.728,9.01722,8.71667,9˚12.022N 8˚43.675W,Parsed coordinates do not match original
-10.267,-12.467,10.01833,12.46667,10˚16.0N 12˚28.0W,Parsed coordinates do not match original
-10.671,-14.26,10.06667,14.25000,10˚40.286N 14˚15.623W,Parsed coordinates do not match original
-11.034,-13.973,11.00056,13.96667,11˚02.066N 13˚58.378W,Parsed coordinates do not match original
-10.292,-14.054,10.01861,14.05000,10˚17.512N 14˚03.226W,Parsed coordinates do not match original
-10.308,-14.021,10.01889,14.01667,10˚18.467N 14˚01.271W,Parsed coordinates do not match original
-10.249,-14.002,10.01778,14.00000,10˚14.952N 14˚00.14W,Parsed coordinates do not match original
-10.003,-12.781,10.00000,12.76667,10˚00.192N 12˚46.834W,Parsed coordinates do not match original
-9.949,-12.883,9.08500,12.86667,9˚56.935N 12˚52.982W,Parsed coordinates do not match original
-11.539,-12.363,11.05056,12.35000,11˚32.349N 12˚21.792W,Parsed coordinates do not match original
-11.3,-12.443,11.01889,12.43333,11˚18.004N 12˚26.580W,Parsed coordinates do not match original
-11.088,-12.418,11.00139,12.41667,11˚05.302N 12˚25.074W,Parsed coordinates do not match original
-11.329,-12.596,11.01917,12.58333,11˚19.716N 12˚35.734W,Parsed coordinates do not match original
-11.255,-12.361,11.01806,12.35000,11˚15.324N 12˚21.653W,Parsed coordinates do not match original
-10.492,-12.369,10.03583,12.36667,10˚29.521N 12˚22.121W,Parsed coordinates do not match original
-10.42,-12.4,10.03472,12.40000,10˚25.218N 12˚24.014W,Parsed coordinates do not match original
-10.351,-12.441,10.03361,12.43333,10˚21.030N 12˚26.459W,Parsed coordinates do not match original
-10.289,-12.412,10.01861,12.40000,10˚17.365N 12˚24.736W,Parsed coordinates do not match original
-47.9301,15.9438,47.92500,15.94667,"47˚55'48.5""N 15˚56'37.8""E",Parsed coordinates do not match original
-34.433,-119.915,34.03500,119.90000,34˚26.0'N 119˚54.9'W,Parsed coordinates do not match original
--71.293,-13.8,-71.01861,13.80000,71˚17.60'S 13˚48.00'W,Parsed coordinates do not match original
--71.188,-12.308,-71.01694,12.30000,71˚11.30'S 12˚18.50W,Parsed coordinates do not match original
--61.164,-54.557,-61.00250,54.55000,61˚09.82'S 54˚33.40'W,Parsed coordinates do not match original
--61.346,-55.23,-61.03333,55.21667,61˚20.76'S 55˚13.80'W,Parsed coordinates do not match original
--60.886,-55.383,-60.08417,55.36667,60˚53.13'S 55˚22.96'W,Parsed coordinates do not match original
--60.981,-55.829,-60.08556,55.81667,60˚58.83'S 55˚49.74'W,Parsed coordinates do not match original
--61.981,-55.829,-61.08556,55.81667,61˚58.83'S 55˚49.74'W,Parsed coordinates do not match original
--61.864,-59.262,-61.08361,59.25000,61˚51.83'S 59˚15.71'W,Parsed coordinates do not match original
--61.391,-55.447,-61.03417,55.43333,61˚23.45'S 55˚26.82'W,Parsed coordinates do not match original
--71.107,-11.463,,,71˚6.44'S 11˚27.76W,Coordinate not parsed
--72.857,-19.644,-72.08361,19.63333,72˚51.43'S 19˚38.62'W,Parsed coordinates do not match original
--72.287,170.398,-72.01861,170.38333,72˚17.2'S 170˚23.9E,Parsed coordinates do not match original
--61.339,-55.486,-61.03333,55.48333,61˚20.35'S 55˚29.16'W,Parsed coordinates do not match original
--61.338,-55.515,-61.03333,55.50000,61˚20.27'S 55˚30.92'W,Parsed coordinates do not match original
--60.982,-55.189,-60.08556,55.18333,60˚58.90'S 55˚11.31'W,Parsed coordinates do not match original
--61.38,-56.064,-61.03389,56.05000,61˚22.80'S 56˚03.84'W,Parsed coordinates do not match original
--63.009,-58.634,-63.00000,58.63333,63˚00.55'S 58˚38.01'W,Parsed coordinates do not match original
--63.009,-58.828,-63.00000,58.81667,63˚00.52'S 58˚49.68'W,Parsed coordinates do not match original
--63.078,-57.527,-63.00111,57.51667,63˚04.70'S 57˚31.60'W,Parsed coordinates do not match original
--71.731,171.75,-71.06750,171.75000,71˚43.88'S 171˚45.00'E,Parsed coordinates do not match original
--71.741,171.644,-71.06778,171.63333,71˚44.44'S 171˚38.64'E,Parsed coordinates do not match original
--72.277,171.449,-72.01833,171.43333,72˚16.61'S 171˚26.94'E,Parsed coordinates do not match original
--71.258,170.698,-71.01806,170.68333,71˚15.5'S 170˚41.9'E,Parsed coordinates do not match original
--71.258,170.635,-71.01806,170.63333,71˚15.45'S 170˚38.08'E,Parsed coordinates do not match original
--71.512,171.425,-71.05000,171.41667,71˚30.72'S 171˚25.51'E,Parsed coordinates do not match original
--62.587,-54.767,-62.05139,54.75000,62˚35.19'S 54˚45.99'W,Parsed coordinates do not match original
--62.431,-55.585,-62.03472,55.58333,62˚25.84'S 55˚35.07'W,Parsed coordinates do not match original
-42.442,-76.431,42.03500,76.41667,42° 26.501′ N 076° 25.889′ W,Parsed coordinates do not match original
-42.476,-76.451,42.03556,76.45000,42° 28.532′ N 076° 27.044′ W,Parsed coordinates do not match original
-42.458,-76.46,42.03528,76.45000,42° 27.486′ N 076° 27.594′ W,Parsed coordinates do not match original
-42.449,-76.429,42.03500,76.41667,42° 26.924′ N 076° 25.757′ W,Parsed coordinates do not match original
-35.113,-90.057,,,"35° 6.783′ N, 90° 3.433′ W",Coordinate not parsed
-35.212,-90.038,35.01722,90.03333,"35° 12.732′ N, 90° 2.305′ W",Parsed coordinates do not match original
-35.315,-90.006,35.01889,90.00000,"35° 18.914′ N, 90° 0.370′ W",Parsed coordinates do not match original
-35.363,-90.017,35.03361,90.00000,"35° 21.800′ N, 90° 0.990′ W",Parsed coordinates do not match original
--3.8561,-33.826,-3.86500,-33.82567,"3°51′21.9′′ S, 33°49′33.54′′ W",Parsed coordinates do not match original
-35.113,-90.057,,,"35° 6.783′ N, 90° 3.433′ W",Coordinate not parsed
-35.212,-90.038,35.01722,90.03333,"35° 12.732′ N, 90° 2.305′ W",Parsed coordinates do not match original
-35.363,-90.017,35.03361,90.00000,"35° 21.800′ N, 90° 0.990′ W",Parsed coordinates do not match original
-35.315,-90.006,35.01889,90.00000,"35° 18.914′ N, 90° 0.370′ W",Parsed coordinates do not match original
+-62.431,-55.585,-62.43067,-55.58450,62˚25.84'S 55˚35.07'W,Parsed coordinates do not match original
+35.315,-90.006,35.31523,-90.00617,"35° 18.914′ N, 90° 0.370′ W",Parsed coordinates do not match original
+35.315,-90.006,35.31523,-90.00617,"35° 18.914′ N, 90° 0.370′ W",Parsed coordinates do not match original
 38.5449,-121.741,38.00000,-121.00000,"38°N, 121°W",Parsed coordinates do not match original
 38.6037,-121.709,,,"38.6037°, -121.7094°",Coordinate not parsed
-35.63,34.352,35.05194,34.35000,35°37.8'N 34°21.1'E,Parsed coordinates do not match original
 59.6526,10.8367,,,"+59° 39′ 9.20″, +10° 50′ 12.01″",Coordinate not parsed
-60.1129,11.4015,60.11017,11.40717,"60° 6′ 46.61″ N, 11° 24′ 5.43″ E",Parsed coordinates do not match original
-32.688,-117.275,32.06694,117.26667,32°41.30'N 117°16.50'W,Parsed coordinates do not match original
 -28.3866,27.8802,,,"28°23'11.64""S  27°52'48.76""E",Coordinate not parsed
 -31.2532,146.921,-28.60000,153.63000,"28°36'S 153°37'48""E",Parsed coordinates do not match original
 34.6113,135.48,35.15000,139.61333,"35°09'00""N 139°36'80""E",Parsed coordinates do not match original
@@ -506,18 +126,15 @@ inLat,inLong,outLat,outLong,coord_string,parse_error
 -30,-60,,,30° S y 60° O,Coordinate not parsed
 -46.1,-71.5,,,71°30' L.W. y 46°06' L.S,Coordinate not parsed
 -31.7166,-60.5667,,,31°43'S - 60°34'W,Coordinate not parsed
-41.21,-101.649,41.01722,101.63333,"41°12.591′ N, 101°38.969′ W",Parsed coordinates do not match original
--1.002,-75.527,,,"01°0.1'S, 75°31.6'W",Coordinate not parsed
 -0.067,-74.517,,,"08C04'S, 74°31'W",Coordinate not parsed
 -12.785,-69.28,-12.81667,-69.27500,"12°49'S, 69°16'30""W",Parsed coordinates do not match original
--0.4747,-76.9807,-0.03556,76.96667,"00°28.7'S, 76°58.2'W",Parsed coordinates do not match original
--0.38,-76.612,-0.03389,76.60000,"00°22.8'S, 76°36.7'W",Parsed coordinates do not match original
--0.3948,-76.6469,-0.03444,-76.65000,"00°24.6'S, 76°39'W",Parsed coordinates do not match original
+-0.4747,-76.9807,-0.47833,-76.97000,"00°28.7'S, 76°58.2'W",Parsed coordinates do not match original
+-0.3948,-76.6469,-0.41000,-76.65000,"00°24.6'S, 76°39'W",Parsed coordinates do not match original
 -8.9665,-74.7512,-9.00000,74.00000,"09°S, 74°45'W",Parsed coordinates do not match original
 -1,-75.4333,,,"01°00/03'S, 75°26/28'W",Coordinate not parsed
--0.3996,-76.638,-0.41667,76.63333,"00°25'S, 76°38.5'W",Parsed coordinates do not match original
+-0.3996,-76.638,-0.41667,-76.64167,"00°25'S, 76°38.5'W",Parsed coordinates do not match original
 -1,-75.8666,,,"01°00/03'S, 75°26/28'W",Coordinate not parsed
--0.3921,-76.6476,-0.03444,-76.65000,"00°24.6'S, 76°39'W",Parsed coordinates do not match original
+-0.3921,-76.6476,-0.41000,-76.65000,"00°24.6'S, 76°39'W",Parsed coordinates do not match original
 23.1589,-106.335,23.15889,-106.33528,"23°09'32""N,106°20'07""W",Parsed coordinates do not match original
 23.18,-106.425,23.18000,-106.42528,"23°10'48""N106°25'31""W",Parsed coordinates do not match original
 2.817,-60.35,2.81667,-60.65000,"2°49'N-60°39""W",Parsed coordinates do not match original
@@ -537,129 +154,101 @@ inLat,inLong,outLat,outLong,coord_string,parse_error
 13.7,38.975,13.71667,38.95000,13°41–13°43 N and 38°57–39°00 E,Parsed coordinates do not match original
 13.7167,39.5333,13.78333,39.50000,13°39–13°47 N and 39°30–39°34 E,Parsed coordinates do not match original
 38.05,109.342,38.73333,108.65000,"37° 22′–38° 44′ N, 108° 39′–110° 02′ E ",Parsed coordinates do not match original
-46.102,-88.274,,,46°6.1N 88°16.417W,Coordinate not parsed
 -32.7185,152.108,-32.11694,152.16667,32°71'S 152°10'E,Parsed coordinates do not match original
-42.449,-76.429,42.03500,76.41667,42° 26.924′ N 076° 25.757′ W,Parsed coordinates do not match original
-42.458,-76.46,42.03528,76.45000,42°27.486′ N 076° 27.594′ W,Parsed coordinates do not match original
-42.476,-76.451,42.03556,76.45000,42° 28.532′ N 076° 27.044′ W,Parsed coordinates do not match original
-42.442,-76.431,42.03500,76.41667,42°26.501′ N 076°25.889′W,Parsed coordinates do not match original
 30.15,-81.7,,,"30º  09' N, 81º  42' W",Coordinate not parsed
-44.477,-63.546,44.03556,63.53333,"44°28.609′ N, 63°32.741′ W",Parsed coordinates do not match original
-38.319,-123.072,38.01917,123.06667,"38°19.110′ N, 123°04.294′ W",Parsed coordinates do not match original
 -32,-71,,,entre los 32° lat. S. y 71° lat. O.,Coordinate not parsed
-51.023,100.76,,,"51° 1.405' N, 100°45.60' E",Coordinate not parsed
-43.613,103.773,43.05167,103.76667,43° 36.76N 103° 46.36E,Parsed coordinates do not match original
 43.57,104.43,,,"43.57°N, 104.43° E",Coordinate not parsed
 44.01,103.53,,,"44.01° N, 103.53° E",Coordinate not parsed
 41.7786,111.895,,,"41°46'43.6''N, 111°53'41.7''E",Coordinate not parsed
 -37.1167,-73.1667,,,"37°,07’ S, 73°10’ W",Coordinate not parsed
 46.2,100.167,,,"46º 12'N, 100º 10'E",Coordinate not parsed
 46.45,100.5,,,"46º 27'N, 100º 30'E",Coordinate not parsed
-39.6375,-84.0272,39.64717,-84.03033,"39°38′14.83″ N, 84°1′37.82″ W  ",Parsed coordinates do not match original
 18.2241,-66.4398,17.75000,-66.25000,"(17°45′ N, 66°15′ W)",Parsed coordinates do not match original
--46.24,167.065,-46.01778,167.05000,"between (46°14.4′ S, 167°3.9′ E) and (46°15.7′ S, 167°12.9′ E)",Parsed coordinates do not match original
--46.24,167.065,-46.01806,167.20000,"between (46°14.4′ S, 167°3.9′ E) and (46°15.7′ S, 167°12.9′ E)",Parsed coordinates do not match original
-41.763,-105.377,41.06806,105.36667,"(41° 45.778″ N, 105° 22.605″ W) ",Parsed coordinates do not match original
-41.1651,-96.4766,41.15333,-96.48167,"41°09′54.2″N, 96°28′35.9″W",Parsed coordinates do not match original
+-46.24,167.065,-46.26167,167.21500,"between (46°14.4′ S, 167°3.9′ E) and (46°15.7′ S, 167°12.9′ E)",Parsed coordinates do not match original
 64.6667,-75.5,,,64°40´N 75°30´W,Coordinate not parsed
 58.75,-98.9167,,,58°45´N 98°55´W,Coordinate not parsed
 64.4333,-77.75,,,64°26´N 77°45´W,Coordinate not parsed
 -16.4506,49.7933,,,"16°27. 1–3'S, 49°47.6'E",Coordinate not parsed
-29.4379,34.9712,29.03500,34.96667,"29°26.276, 34°58.275",Parsed coordinates do not match original
-27.7787,34.0486,27.06833,34.03333,"27°46.723, 34°02.915",Parsed coordinates do not match original
-27.741,34.148,27.06778,34.13333,"27°44.460, 34°08.881",Parsed coordinates do not match original
-27.705,34.1189,27.06722,34.11667,"27°42.303, 34°07.133",Parsed coordinates do not match original
-27.7889,33.8871,27.06861,33.88333," 27°47.334, 33°53.227 	",Parsed coordinates do not match original
-27.8358,34.0038,27.08333,34.00000,"27°50.146, 34°00.230",Parsed coordinates do not match original
-27.7314,34.261,27.06750,34.25000,"27°43.886, 34°15.663",Parsed coordinates do not match original
-22.3274,39.0392,22.01917,39.03333,"22°19.647, 39°02.350",Parsed coordinates do not match original
-22.3275,39.0392,22.01917,39.03333,"22°19.648, 39°02.351 	",Parsed coordinates do not match original
-21.693,39.0123,21.06694,39.00000,"21°41.581, 39°00.741",Parsed coordinates do not match original
-21.7434,38.9633,21.06778,38.95000,"21°44.602, 38°57.798",Parsed coordinates do not match original
-21.662,38.9808,21.05250,38.96667,"21°39.721, 38°58.850",Parsed coordinates do not match original
-21.7173,38.9875,21.06750,38.98333,"21°43.039, 38°59.253",Parsed coordinates do not match original
-20.1054,40.2172,20.00167,40.21667,"20°06.326, 40°13.030",Parsed coordinates do not match original
-15.5658,42.2264,15.05083,42.21667,"15°33.949, 42°13.585",Parsed coordinates do not match original
-15.2766,42.6032,15.01833,42.60000,"15°16.593, 42°36.192",Parsed coordinates do not match original
-15.6997,42.3942,15.06694,42.38333,"15°41.979, 42°23.654",Parsed coordinates do not match original
-15.6847,42.4685,15.06694,42.46667,"15°41.084, 42°28.110",Parsed coordinates do not match original
-12.2777,43.3821,12.01833,43.36667,"12°16.662, 43°22.926",Parsed coordinates do not match original
-11.5963,43.0331,11.05139,43.01667,"11°35.780, 43°01.985",Parsed coordinates do not match original
-11.7156,43.1541,11.06722,43.15000,"11°42.937, 43°09.246",Parsed coordinates do not match original
-11.7445,43.2073,11.06778,43.20000,"11°44.669, 43°12.440",Parsed coordinates do not match original
-11.7707,42.9477,11.06833,42.93333,"11°46.245, 42°56.860",Parsed coordinates do not match original
-11.5899,42.833,11.05139,42.81667,"11°35.394, 42°49.981",Parsed coordinates do not match original
-38.5572,27.2197,38.55000,27.21667,38°33'26.00N; 27°13'11.00E,Parsed coordinates do not match original
-40.963,-73.137,40.08528,73.13333,"40° 57.78’ N, 73° 8.22’ W",Parsed coordinates do not match original
--74.521,177.567,-74.05028,177.56667,"74° 31.27’ S, 177° 34.02’ E",Parsed coordinates do not match original
-43.3891,10.4298,43.32917,10.42933,"43° 19’ 01.75’’ N, 10° 25’ 52.76’’ E)",Parsed coordinates do not match original
-29.8967,-81.3108,29.88967,81.30967,29° 53’ 48.38’’ 81° 18’ 39.58’’,Parsed coordinates do not match original
-29.6703,-81.2158,29.67733,81.20100,29° 40’ 13.64’’ 81° 12’ 57.06’’,Parsed coordinates do not match original
-27.6542,-80.3689,27.66217,80.37417,27° 39’ 15.73’’ 80° 22’ 8.45’’,Parsed coordinates do not match original
-27.4736,-80.3222,27.47183,80.33233,27° 28’ 25.31’’ 80° 19’ 20.94’’,Parsed coordinates do not match original
-29.7384,-81.245,29.06778,-81.23333,29° 44.302’ -81° 14.701’,Parsed coordinates do not match original
-29.659,-81.2382,29.05250,-81.23333,29° 39.532’ -81° 14.289’,Parsed coordinates do not match original
-29.4945,-81.1425,29.03583,-81.13333,29° 29.667’ -81° 8.552’,Parsed coordinates do not match original
-27.53,-80.3527,27.05028,-80.35000,27° 31.794’ -80° 21.160’,Parsed coordinates do not match original
-27.4902,-80.338,27.03583,-80.33333,27° 29.414’ -80° 20.281’,Parsed coordinates do not match original
-27.5149,-80.32,27.05000,-80.31667,27° 30.895’ -80° 19.199’,Parsed coordinates do not match original
-27.3149,-80.2627,27.01889,-80.25000,27° 18.892’ -80° 15.759’,Parsed coordinates do not match original
-28.3912,127.64,28.03417,127.63333,"28° 23.47’ N, 127° 38.39’E",Parsed coordinates do not match original
-27.247,127.068,27.01778,127.06667,"27° 14.81’ N, 127° 04.08’E",Parsed coordinates do not match original
-25.229,124.87,25.01750,124.86667,"25° 13.75’ N, 124° 52.20’E",Parsed coordinates do not match original
-24.858,123.842,24.08361,123.83333,"24° 51.47’ N, 123° 50.50’E",Parsed coordinates do not match original
-22.341,114.295,22.03333,114.28333,"22° 20.453’ N, 114° 17.703’ E",Parsed coordinates do not match original
-48.529,-123.013,48.05028,123.00000,"(48° 31.728’ N, 123° 00.802’ W)",Parsed coordinates do not match original
-23.788,-76.135,23.06861,76.13333,"(23° 47.30’ N, 76° 08.12’ W)",Parsed coordinates do not match original
-23.796,-76.147,23.06861,76.13333,"(23° 47.78’ N, 76° 08.79’ W)",Parsed coordinates do not match original
-23.79,-76.138,23.06861,76.13333,"23° 47.39’ N, 76° 08.27’ W",Parsed coordinates do not match original
-25.748,51.558,25.06778,51.55000,"25° 44.880’ N, 51° 33.498’ E",Parsed coordinates do not match original
-25.729,51.562,25.06750,51.55000,"25° 43.758’ N, 51° 33.738’ E",Parsed coordinates do not match original
-25.694,51.553,25.06694,51.55000,"(25° 41.643’ N, 51° 33.160’ E)",Parsed coordinates do not match original
--70.944,10.534,70.08500,10.53333,70° 56.64’ 10° 32.03’,Parsed coordinates do not match original
--32.025,115.529,,,32° 1.470’ 115° 31.760’,Coordinate not parsed
--32.074,115.74,,,32° 4.416’ 115° 44.399’,Coordinate not parsed
--32.12,115.65,,,32° 7.200’ 115° 39.000’,Coordinate not parsed
--32.135,115.706,,,32° 8.096’ 115° 42.388’,Coordinate not parsed
--32.136,115.719,,,32° 8.130’ 115° 43.140’,Coordinate not parsed
--32.136,115.746,,,32° 8.176’ 115° 44.774’,Coordinate not parsed
--32.136,115.742,,,32° 8.130’ 115° 44.524’,Coordinate not parsed
--32.159,115.67,,,32° 9.530’ 115° 40.205’,Coordinate not parsed
--32.201,115.683,32.01722,115.66667,32° 12.055’ 115° 40.986’,Parsed coordinates do not match original
--32.251,115.706,32.01806,115.70000,32° 15.064’ 115° 42.374’,Parsed coordinates do not match original
--32.272,115.703,32.01833,115.70000,32° 16.298’ 115° 42.158’,Parsed coordinates do not match original
--32.272,115.692,32.01833,115.68333,32° 16.333’ 115° 41.510’,Parsed coordinates do not match original
--32.305,115.704,32.01889,115.70000,32° 18.319’ 115° 42.227’,Parsed coordinates do not match original
-41.8144,-11.4668,41.81100,-11.47583,"41° 48’ 51.66’’ N, 11° 28’ 0.55’’W",Parsed coordinates do not match original
-41.798,-11.4662,41.79783,-11.45467,"(41° 47’ 52.87’’ N, 11° 27’ 58.28’’W)",Parsed coordinates do not match original
-37.8224,-8.7936,37.82433,-8.79883,"(37° 49’ 20.46’’ N, 8° 47’ 36.93’’W)",Parsed coordinates do not match original
-29.1584,-13.4272,29.15300,-13.41733,"(29° 09’ 30.18’’ N, 13° 25’ 38.04’’W)",Parsed coordinates do not match original
-29.1244,-13.6469,29.13267,-13.64767,"(29° 07’ 27.96’’ N, 13° 38’ 48.86’’W)",Parsed coordinates do not match original
-27.779,-17.9053,27.77250,-17.90317,"(27° 46’ 44.35’’ N, 17° 54’ 19.19’’W)",Parsed coordinates do not match original
-27.6712,-18.0271,27.66900,-18.02450,"(27° 40’ 16.14’’ N, 18° 01’ 37.47’’W)",Parsed coordinates do not match original
-18.31,-64.723,18.01889,64.71667,"(18° 18.585’ N, 64° 43.373’ W)",Parsed coordinates do not match original
+27.705,34.1189,27.70505,34.11888,"27°42.303, 34°07.133",Parsed coordinates do not match original
+43.3891,10.4298,43.31715,10.43132,"43° 19’ 01.75’’ N, 10° 25’ 52.76’’ E)",Parsed coordinates do not match original
+29.8967,-81.3108,29.89677,81.31099,29° 53’ 48.38’’ 81° 18’ 39.58’’,Parsed coordinates do not match original
+29.6703,-81.2158,29.67046,81.21585,29° 40’ 13.64’’ 81° 12’ 57.06’’,Parsed coordinates do not match original
+27.6542,-80.3689,27.65437,80.36901,27° 39’ 15.73’’ 80° 22’ 8.45’’,Parsed coordinates do not match original
+27.4736,-80.3222,27.47370,80.32248,27° 28’ 25.31’’ 80° 19’ 20.94’’,Parsed coordinates do not match original
+37.2619,-75.815,37.26213,-75.81515,"(37° 15’ 43.662’’ N, 75° 48’ 54.554’’W)",Parsed coordinates do not match original
+-70.944,10.534,70.94400,0.53383,70° 56.64’ 10° 32.03’,Parsed coordinates do not match original
+-32.025,115.529,32.02450,5.52933,32° 1.470’ 115° 31.760’,Parsed coordinates do not match original
+-32.074,115.74,32.07360,5.73998,32° 4.416’ 115° 44.399’,Parsed coordinates do not match original
+-32.12,115.65,32.12000,5.65000,32° 7.200’ 115° 39.000’,Parsed coordinates do not match original
+-32.135,115.706,32.13493,5.70647,32° 8.096’ 115° 42.388’,Parsed coordinates do not match original
+-32.136,115.719,32.13550,5.71900,32° 8.130’ 115° 43.140’,Parsed coordinates do not match original
+-32.136,115.746,32.13627,5.74623,32° 8.176’ 115° 44.774’,Parsed coordinates do not match original
+-32.136,115.742,32.13550,5.74207,32° 8.130’ 115° 44.524’,Parsed coordinates do not match original
+-32.159,115.67,32.15883,5.67008,32° 9.530’ 115° 40.205’,Parsed coordinates do not match original
+-32.201,115.683,32.20092,5.68310,32° 12.055’ 115° 40.986’,Parsed coordinates do not match original
+-32.251,115.706,32.25107,5.70623,32° 15.064’ 115° 42.374’,Parsed coordinates do not match original
+-32.272,115.703,32.27163,5.70263,32° 16.298’ 115° 42.158’,Parsed coordinates do not match original
+-32.272,115.692,32.27222,5.69183,32° 16.333’ 115° 41.510’,Parsed coordinates do not match original
+-32.305,115.704,32.30532,5.70378,32° 18.319’ 115° 42.227’,Parsed coordinates do not match original
 -31.9994,143.017,,," -31.9994°, 143.01706°",Coordinate not parsed
 -37.8954,-73.3571,-37.83333,-73.36667,"(37°50′ S, 73°22′ W)",Parsed coordinates do not match original
-30.628,102.855,,,"latitude: 30.628° N, longitude: 102.855° E",Coordinate not parsed
-68.6238,-149.61,68.62817,-149.61200,"68°37′25.69″N, 149°36′35.72″W",Parsed coordinates do not match original
-41.4793,-112.267,41.47383,-112.28017,"41°28'45.43""N 112°16'00.81""W",Parsed coordinates do not match original
-38.443,-96.573,38.03500,96.56667,"38°26.558' N, 96°34.380' W",Parsed coordinates do not match original
 -41,-71,,,41°S–71°W),Coordinate not parsed
 -23.483,138.533,,,23º  29' S 138º  32' E,Coordinate not parsed
 -23.267,138.283,,,23º  16' S 138º  17' E,Coordinate not parsed
 -23.75,138.467,,,23º  45' S 138º 28' E,Coordinate not parsed
-40.52,15,,,"Lat. 40.52°N, Long. 15.00°E",Coordinate not parsed
 -9,-35.867,-9.00000,35.00000,"9°S, 35°52′W",Parsed coordinates do not match original
+-26.3033,-48.8375,-26.30450,-48.84868,"S26°18′16.2″, W48°50′55.248",Parsed coordinates do not match original
+-21.6519,-41.6067,-21.65919,-41.60990,"S21°39′55.116″, W41°36′59.4",Parsed coordinates do not match original
+47.0353,116.833,47.46537,116.83333,47°27.922N116°50,Parsed coordinates do not match original
+47.0353,116.833,47.46433,116.83333,47°27.860N116°50,Parsed coordinates do not match original
+47.0353,116.833,47.46513,116.83333,47°27.908N116°50,Parsed coordinates do not match original
+47.0353,116.817,47.46190,116.81667,47°27.714N116°49,Parsed coordinates do not match original
+47.0353,116.833,47.46477,116.83333,47°27.886N116°50,Parsed coordinates do not match original
+47.0353,116.833,47.46553,116.83333,47°27.932N116°50,Parsed coordinates do not match original
+47.0356,116.833,47.46675,116.83333,47°28.005N116°50,Parsed coordinates do not match original
+47.0356,116.833,47.47217,116.83333,47°28.33N116°50,Parsed coordinates do not match original
+47.0347,116.75,47.41667,116.75000,47°25.000N116°45,Parsed coordinates do not match original
+47.0347,116.75,47.42370,116.75000,47°25.422N116°45,Parsed coordinates do not match original
 37.93,6.22,,,37.93° 6.22°,Coordinate not parsed
+37.0169,2,37.93000,2.00000,37.93° 11.02° 0,Parsed coordinates do not match original
 32.99,6.22,,,32.99° 6.22°,Coordinate not parsed
+32.0169,2,32.99000,2.00000,32.99° 11.02° 0,Parsed coordinates do not match original
+32.0181,3,32.99000,3.00000,32.99° 15.83° 0,Parsed coordinates do not match original
 27.45,6.22,,,27.45° 6.22°,Coordinate not parsed
+27.0169,2,27.45000,2.00000,27.45° 11.02° 0,Parsed coordinates do not match original
+27.0181,3,27.45000,3.00000,27.45° 15.83° 0,Parsed coordinates do not match original
 21.29,6.22,,,21.29° 6.22°,Coordinate not parsed
+21.0169,2,21.29000,2.00000,21.29° 11.02° 0,Parsed coordinates do not match original
+21.0181,3,21.29000,3.00000,21.29° 15.83° 0,Parsed coordinates do not match original
 14.56,6.22,,,14.56° 6.22°,Coordinate not parsed
+14.0169,2,14.56000,2.00000,14.56° 11.02° 0,Parsed coordinates do not match original
+14.0181,3,14.56000,3.00000,14.56° 15.83° 0,Parsed coordinates do not match original
 22.6,5.72,,,22.60° 5.72°,Coordinate not parsed
 26.2,5.72,,,26.20° 5.72°,Coordinate not parsed
 29.5,5.72,,,29.50° 5.72°,Coordinate not parsed
 10.4,17.5,,,10.4 ° and 17.5°,Coordinate not parsed
 11.3,18.4,,,"11.3 ° , 18.4°",Coordinate not parsed
+-8.39667,-37.2383,-8.39828,-37.24758,"8°23′53.8″ S, 37°14′51.3″ W",Parsed coordinates do not match original
+8.01667,0.2,8.00000,0.70000,8º 10.7º 12,Parsed coordinates do not match original
+50.347,19.5833,50.34578,19.59556,"50°20′44.82″ N, 19°35′44.00″ E",Parsed coordinates do not match original
+50.3488,19.5858,50.34581,19.59560,"50°20′44.93″ N, 19°35′44.15″ E",Parsed coordinates do not match original
+50.3477,19.5997,50.34468,19.59444,"50°20′40.86″ N, 19°35′39.98″ E",Parsed coordinates do not match original
+50.3423,19.5853,50.34598,19.59892,"50°20′45.54″ N, 19°35′56.12″ E",Parsed coordinates do not match original
+50.3393,19.613,50.34816,19.60133,"50°20′53.36″ N, 19°36′04.78″ E",Parsed coordinates do not match original
+50.7258,19.2832,50.72876,19.27083,"50°43′43.55″ N, 19°16′14.99″ E",Parsed coordinates do not match original
+50.7282,19.2832,50.72908,19.27083,"50°43′44.69″ N, 19°16′14.99″ E",Parsed coordinates do not match original
+50.4023,19.688,50.41532,19.69147,"50°24′55.14″ N, 19°41′29.28″ E",Parsed coordinates do not match original
+-18.9417,48.42,-18.93403,48.42006,"18°56′2.5″ S, 48°25′12.2″ E",Parsed coordinates do not match original
+-18.9417,48.4267,-18.94736,48.42294,"18°56′50.5″ S, 48°25′22.6″ E",Parsed coordinates do not match original
+-18.9433,48.42,-18.94739,48.42283,"18°56′50.6″ S, 48°25′22.2″ E",Parsed coordinates do not match original
+-18.9467,48.4183,-18.94022,48.42003,"18°56′24.8″ S, 48°25′12.1″ E",Parsed coordinates do not match original
+-18.9283,48.5133,-18.92047,48.51411,"18°55′13.7″ S, 48°30′50.8″ E",Parsed coordinates do not match original
+-18.9283,48.5133,-18.92047,48.51411,"18°55′13.7″ S, 48°30′50.8″ E",Parsed coordinates do not match original
+-18.1717,47.2867,-18.18286,47.28950,"18°10′58.3″ S, 47°17′22.2″ E",Parsed coordinates do not match original
+-16.31,46.8133,-16.31294,46.81633,"16°18′46.6″ S, 46°48′58.8″ E",Parsed coordinates do not match original
+-16.3,46.8017,-16.31306,46.81586,"16°18′47.0″ S, 46°48′57.1″ E",Parsed coordinates do not match original
+8.38333,-83.3167,8.39000,-83.32000,"8°23′24.00″N, 83°19′12.00″W",Parsed coordinates do not match original
+10.419,-83.9723,10.43004,-83.97954,"10°25′48.14″N, 83°58′46.34″W",Parsed coordinates do not match original
+-20.0817,-40.7383,-20.07442,-40.74758,20°04′27.9″ S 40°44′51.3″ W,Parsed coordinates do not match original
 33,129,,,"33°N, 129°",Coordinate not parsed
--2.2796,30.2684,-2.27500,30.27000,"02°16′46.5′′ S, 30°16′06.2′′ E",Parsed coordinates do not match original
--2.4842,29.7662,-2.48667,29.75333,"02°29′03.2′′ S, 29°45′58.2′′ E",Parsed coordinates do not match original
+-34.0175,18.4667,-34.23067,18.46667,"34°13.84′S, 18°28",Parsed coordinates do not match original
