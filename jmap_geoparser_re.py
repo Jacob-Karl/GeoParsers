@@ -11,7 +11,7 @@ arguments: none, but paths and file variables need to be modified below
 import os, re, sys
 from decimal import Decimal, setcontext, ExtendedContext
 
-parserVersion = "Regular Expression GeoParser 2.0 beta, 8/27/2015"
+parserVersion = "Regular Expression GeoParser 2.0 beta, 05/25/2016"
 
 def GeoCleanup(parts):
     """
@@ -184,20 +184,20 @@ parser_re = re.compile(ur"""\b
     # Latitude degrees: two digits 0-90
     (?P<latsign>(?:-|−))?
     (?P<latdeg>(?:1(?:[0-7][0-9]|80)|(?:-?0?[0-9][0-9])|(?:-?[0-9])))
-    (?P<latdecdeg>\.\d{1,8})?
+    (?P<latdecdeg>[\.|·|.]\d{1,8})?
     # Degree mark or word separating degrees and minutes
-    (?P<degmark>\ ?(?:º|°|˚|°|˚| ͦ|˚|º|°|degrees|&deg;))\ ?  
+    (?P<degmark>\ ?(?:º|°|˚|°|˚| ͦ|˚|º|°|degrees|&deg;|deg))\ ?  
     (?P<latminsec>
     # Latitude minutes: two digits 0-59
     (?P<latmin>[0-5]?[0-9])
-    (?P<latdecmin>\.\d{1,8})?
+    (?P<latdecmin>[\.|·|.]\d{1,8})?
     # If there was a degree mark before, look for punctuation after the minutes
     (\ |(?(degmark)(″|"|′|'|’|minutes|′′|''|‘|‘‘|’|’’|‛|‛‛|‘|‘‘|ʹ|ʹʹ|ʼ|ʼʼ|“|”|‟|‟|〞|＂|ʺ|˝)))?\ ?
     (
     # Latitude seconds: two digits
     ((?P<latsec>(\d{1,2}))
     # Decimal fraction of seconds
-    (?P<latdecsec>\.\d{1,8})?)?)
+    (?P<latdecsec>[\.|·|.]\d{1,8})?)?)
     (?(degmark)(″|"|′|'|seconds|′′|''|‘|‘‘|’|’’|‛|‛‛|‘|‘‘|ʹ|ʹʹ|ʼ|ʼʼ|“|”|‟|‟|〞|＂|ʺ|˝)?)\ ?
     )? 
     # Latitude direction, second position, optionally preceded by a space
@@ -213,20 +213,20 @@ parser_re = re.compile(ur"""\b
     # Longitude degrees: two or three digits
     (?P<longsign>(?:-|−))? 
     (?P<longdeg>(?:1(?:[0-7][0-9]|80)|(?:-?0?[0-9][0-9])|(?:-?[0-9])))
-    (?P<longdecdeg>\.\d{1,8})?   
+    (?P<longdecdeg>[\.|·|.]\d{1,8})?   
     # If there was a degree mark before, look for another one here
-    ((?(degmark)(\ ?(?:º|°|˚|°|˚| ͦ|˚|º|°|degrees|&deg;))))\ ?
+    ((?(degmark)(\ ?(?:º|°|˚|°|˚| ͦ|˚|º|°|degrees|&deg;|deg))))\ ?
     (?(latminsec)   #Only look for minutes and seconds in the longitude
     (?P<longminsec> #if they were there in the latitude
     # Longitude minutes: two digits
     (?P<longmin>[0-5]?[0-9])
-    (?P<longdecmin>\.\d{1,8})?
+    (?P<longdecmin>[\.|·|.]\d{1,8})?
     # If there was a degree mark before, look for punctuation after the minutes
     (\ |(?(degmark)(″|"|′|'|’|minutes|′′|''|‘|‘‘|’|’’|‛|‛‛|‘|‘‘|ʹ|ʹʹ|ʼ|ʼʼ|“|”|‟|‟|〞|＂|ʺ|˝)))?\ ?
     # Longitude seconds: two digits
     ((?P<longsec>(\d{1,2}))
     # Decimal fraction of minutes
-    (?P<longdecsec>\.\d{1,8})?)?)
+    (?P<longdecsec>[\.|·|.]\d{1,8})?)?)
     (?(degmark)(″|"|′|'|seconds|′′|''|‘|‘‘|’|’’|‛|‛‛|‘|‘‘|ʹ|ʹʹ|ʼ|ʼʼ|“|”|‟|‟|〞|＂|ʺ|˝)?)\ ?
     )
     #Longitude direction, second position: optionally preceded by a space

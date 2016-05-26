@@ -72,6 +72,7 @@ with open('test_set_full.csv', 'rb') as f:
         coord_string = row[2]
         print coord_string
         coords = coordinateParser.searchString(coord_string)
+        if coords: print "test"
         try:
             assert coords
         except:
@@ -99,7 +100,7 @@ print "Number of locations where parsed coords do not match input: "+str(badPars
 ##########################################################################################
 ###### Repeat parsing of text file using the RegEx GeoParser
 ##########################################################################################
-
+'''
 from jmap_geoparser_re import *
 
 ## Set up the output file
@@ -149,3 +150,4 @@ print "RegEx Geoparser Results"
 print "Total number of locations tested: "+str(total)
 print "Number of locations not parsed: "+str(notParsed)+" ("+str((100.0*notParsed)/total)+"%)"
 print "Number of locations where parsed coords do not match input: "+str(badParse)+" ("+str((100.0*badParse)/total)+"%)"
+'''

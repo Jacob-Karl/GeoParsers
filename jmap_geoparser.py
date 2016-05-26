@@ -6,6 +6,9 @@
 ### assert coordinate(coordinateParser.parseString(test)).calcDD() == {'latitude': 45.38667, 'longitude': 123.39889}
 
 from pyparsing import *
+ParserElement.enablePackrat()
+
+parserVersion = "PyParsing GeoParser 2.0 beta, 05/25/2016"
 
 ## Parsing validation functions
 def validateLatDeg(nums):
@@ -118,11 +121,11 @@ class coordinate(object):
 ## Parsing elements
 digits = Word(nums)
 
-degSign = Literal("º") | Literal('°') | Literal(' ͦ') | Literal('˚') | Literal('º') | Literal('ø') | CaselessLiteral("degrees") | CaselessLiteral("deg") # º|°|˚|°|degrees|&deg;
+degSign = Literal("º") | Literal('°') | Literal(' ͦ') | Literal('˚') | Literal('º') | Literal('ø') | CaselessLiteral("degrees") | CaselessLiteral("deg") | CaselessLiteral("&deg;") # º|°|˚|°|degrees|&deg;
 minSign = Literal("’") | Literal("′") | Literal("'") | Literal("‛") | Literal("‘") | Literal('ʹ') | Literal('ʼ')  | CaselessLiteral("minutes") | CaselessLiteral("min") # ″|"|′|'|’|minutes|′′|''
 secSign = Literal('″') | Literal('"') | Literal("′′") | Literal("''") | Literal("’’") | Literal("‛‛") | Literal("‘‘") | Literal("ʹʹ") | Literal("ʼʼ") | Literal('“') | Literal('”') | Literal('‟') | Literal('〞') | Literal('＂') | Literal('ʺ') | Literal('˝')| CaselessLiteral("seconds") | CaselessLiteral("sec")
 negSign = Literal('-') | Literal('−') | Literal('–') | Literal('—') | Literal('―') | Literal('‒')
-decPoint = Literal(".") | Literal(".")
+decPoint = Literal(".") | Literal(".") | Literal("·")
 
 coordPart = Combine(digits + Optional(decPoint + digits))
 
